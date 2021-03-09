@@ -20,6 +20,9 @@ alias gplo='git pull origin'
 alias gplom='git pull origin master'
 
 ## Docker
+alias dp='docker ps -a'
+alias di='docker images'
+
 function deb () {
   docker exec -it $1 /bin/bash
 }
