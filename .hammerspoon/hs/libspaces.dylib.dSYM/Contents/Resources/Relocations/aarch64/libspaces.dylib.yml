@@ -1,0 +1,18 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     'obj_arm64/libspaces.dylib'
+relocations:
+  - { offsetInCU: 0x27, offset: 0x27, size: 0x8, addend: 0x0, symName: _luaopen_hs_libspaces, symObjAddr: 0x0, symBinAddr: 0x2AC4, symSize: 0x19C }
+  - { offsetInCU: 0x58, offset: 0x58, size: 0x8, addend: 0x0, symName: _regEx_UUID, symObjAddr: 0x4BC8, symBinAddr: 0x8218, symSize: 0x0 }
+  - { offsetInCU: 0x190, offset: 0x190, size: 0x8, addend: 0x0, symName: _g_connection, symObjAddr: 0x4BC0, symBinAddr: 0x8210, symSize: 0x0 }
+  - { offsetInCU: 0x1A5, offset: 0x1A5, size: 0x8, addend: 0x0, symName: _moduleLib, symObjAddr: 0xF00, symBinAddr: 0x8188, symSize: 0x0 }
+  - { offsetInCU: 0xDB0, offset: 0xDB0, size: 0x8, addend: 0x0, symName: _refTable, symObjAddr: 0xF80, symBinAddr: 0x8208, symSize: 0x0 }
+  - { offsetInCU: 0xE57, offset: 0xE57, size: 0x8, addend: 0x0, symName: _luaopen_hs_libspaces, symObjAddr: 0x0, symBinAddr: 0x2AC4, symSize: 0x19C }
+  - { offsetInCU: 0xE9F, offset: 0xE9F, size: 0x8, addend: 0x0, symName: _spaces_screensHaveSeparateSpaces, symObjAddr: 0x19C, symBinAddr: 0x2C60, symSize: 0x8C }
+  - { offsetInCU: 0xED5, offset: 0xED5, size: 0x8, addend: 0x0, symName: _spaces_managedDisplaySpaces, symObjAddr: 0x228, symBinAddr: 0x2CEC, symSize: 0xD8 }
+  - { offsetInCU: 0xF19, offset: 0xF19, size: 0x8, addend: 0x0, symName: _spaces_getActiveSpace, symObjAddr: 0x300, symBinAddr: 0x2DC4, symSize: 0x84 }
+  - { offsetInCU: 0xF4F, offset: 0xF4F, size: 0x8, addend: 0x0, symName: _spaces_moveWindowToSpace, symObjAddr: 0x384, symBinAddr: 0x2E48, symSize: 0x344 }
+  - { offsetInCU: 0xFD4, offset: 0xFD4, size: 0x8, addend: 0x0, symName: _spaces_windowsForSpace, symObjAddr: 0x6C8, symBinAddr: 0x318C, symSize: 0x2F0 }
+  - { offsetInCU: 0x108C, offset: 0x108C, size: 0x8, addend: 0x0, symName: _spaces_windowSpaces, symObjAddr: 0x9B8, symBinAddr: 0x347C, symSize: 0x200 }
+  - { offsetInCU: 0x10ED, offset: 0x10ED, size: 0x8, addend: 0x0, symName: _spaces_coreDesktopSendNotification, symObjAddr: 0xBB8, symBinAddr: 0x367C, symSize: 0xCC }
+...

@@ -1,0 +1,20 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     'obj_arm64/libspaces_watcher.dylib'
+relocations:
+  - { offsetInCU: 0x27, offset: 0x27, size: 0x8, addend: 0x0, symName: '-[SpaceWatcher initWithObject:]', symObjAddr: 0x0, symBinAddr: 0x2D08, symSize: 0xBC }
+  - { offsetInCU: 0x53, offset: 0x53, size: 0x8, addend: 0x0, symName: _refTable, symObjAddr: 0x4904, symBinAddr: 0x82C8, symSize: 0x0 }
+  - { offsetInCU: 0x7A, offset: 0x7A, size: 0x8, addend: 0x0, symName: _watcherlib, symObjAddr: 0xE40, symBinAddr: 0x4028, symSize: 0x0 }
+  - { offsetInCU: 0xC97, offset: 0xC97, size: 0x8, addend: 0x0, symName: _watcher_objectlib, symObjAddr: 0xE60, symBinAddr: 0x4048, symSize: 0x0 }
+  - { offsetInCU: 0xDF1, offset: 0xDF1, size: 0x8, addend: 0x0, symName: '-[SpaceWatcher initWithObject:]', symObjAddr: 0x0, symBinAddr: 0x2D08, symSize: 0xBC }
+  - { offsetInCU: 0xE35, offset: 0xE35, size: 0x8, addend: 0x0, symName: '-[SpaceWatcher callback:withSpace:]', symObjAddr: 0xBC, symBinAddr: 0x2DC4, symSize: 0x16C }
+  - { offsetInCU: 0xEB3, offset: 0xEB3, size: 0x8, addend: 0x0, symName: '-[SpaceWatcher spaceChanged:]', symObjAddr: 0x228, symBinAddr: 0x2F30, symSize: 0x2A8 }
+  - { offsetInCU: 0xF46, offset: 0xF46, size: 0x8, addend: 0x0, symName: '-[SpaceWatcher object]', symObjAddr: 0x4D0, symBinAddr: 0x31D8, symSize: 0x24 }
+  - { offsetInCU: 0xF7C, offset: 0xF7C, size: 0x8, addend: 0x0, symName: '-[SpaceWatcher setObject:]', symObjAddr: 0x4F4, symBinAddr: 0x31FC, symSize: 0x24 }
+  - { offsetInCU: 0xFBA, offset: 0xFBA, size: 0x8, addend: 0x0, symName: _luaopen_hs_libspaces_watcher, symObjAddr: 0x518, symBinAddr: 0x3220, symSize: 0x88 }
+  - { offsetInCU: 0xFF0, offset: 0xFF0, size: 0x8, addend: 0x0, symName: _space_watcher_new, symObjAddr: 0x5A0, symBinAddr: 0x32A8, symSize: 0xEC }
+  - { offsetInCU: 0x1034, offset: 0x1034, size: 0x8, addend: 0x0, symName: _space_watcher_start, symObjAddr: 0x68C, symBinAddr: 0x3394, symSize: 0x184 }
+  - { offsetInCU: 0x1094, offset: 0x1094, size: 0x8, addend: 0x0, symName: _space_watcher_stop, symObjAddr: 0x810, symBinAddr: 0x3518, symSize: 0xD4 }
+  - { offsetInCU: 0x10CA, offset: 0x10CA, size: 0x8, addend: 0x0, symName: _userdata_tostring, symObjAddr: 0x8E4, symBinAddr: 0x35EC, symSize: 0x9C }
+  - { offsetInCU: 0x10F2, offset: 0x10F2, size: 0x8, addend: 0x0, symName: _space_watcher_gc, symObjAddr: 0x980, symBinAddr: 0x3688, symSize: 0xC0 }
+...
