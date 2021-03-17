@@ -77,7 +77,7 @@ set nofoldenable
 " タイトルを表示
 set title
 " 行番号の表示
-set number
+" set number
 " ヤンクでクリップボードにコピー
 set clipboard=unnamed,autoselect
 " Escの2回押しでハイライト消去
