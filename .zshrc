@@ -23,8 +23,11 @@ alias gplom='git pull origin master'
 ## Docker
 alias d='docker'
 alias dr='docker run'
+alias dst='docker start'
+alias dsp='docker stop'
 alias dp='docker ps -a'
 alias di='docker images'
+alias dv='docker volume'
 
 function deb () {
   docker exec -it $1 /bin/bash
