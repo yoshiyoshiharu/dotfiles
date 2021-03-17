@@ -20,6 +20,8 @@ alias gplo='git pull origin'
 alias gplom='git pull origin master'
 
 ## Docker
+alias d='docker'
+alias dr='docker run'
 alias dp='docker ps -a'
 alias di='docker images'
 
