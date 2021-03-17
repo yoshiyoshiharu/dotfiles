@@ -29,6 +29,11 @@ function deb () {
   docker exec -it $1 /bin/bash
 }
 
+## My cd alias
+alias cdp='cd ~/project'
+alias cdb='cd ~/project/bootcamp'
+alias cdd='cd ~/project/dotfiles'
+
 ## M1 brew
 export PATH=/opt/homebrew/bin:$PATH
 export PATH="/opt/homebrew/sbin:$PATH"
