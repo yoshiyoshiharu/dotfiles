@@ -38,7 +38,7 @@ alias cdp='cd ~/project'
 alias cdb='cd ~/project/bootcamp'
 alias cdd='cd ~/project/dotfiles'
 alias vz='vim ~/.zshrc'
-alias vv='vim ~/.vimrc'
+alias sz='source ~/.zshrc'
 
 ## M1 brew
 export PATH=/opt/homebrew/bin:$PATH
