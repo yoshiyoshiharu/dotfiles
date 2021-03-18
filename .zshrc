@@ -1,9 +1,9 @@
-## alias
+## ls alias
 alias ls='ls -G'
 alias ll='ls -lG'
 alias la='ls -laG'
 
-## github alias
+## Git alias
 alias ga='git add'
 alias gc='git commit -m'
 alias gch='git checkout'
@@ -20,7 +20,7 @@ alias gpsom='git push origin master'
 alias gplo='git pull origin'
 alias gplom='git pull origin master'
 
-## Docker
+## Docker alias
 alias d='docker'
 alias dr='docker run'
 alias dst='docker start'
@@ -28,15 +28,18 @@ alias dsp='docker stop'
 alias dp='docker ps -a'
 alias di='docker images'
 alias dv='docker volume'
+alais di='docker network'
 
 function deb () {
   docker exec -it $1 /bin/bash
 }
 
-## My cd alias
+## original alias
 alias cdp='cd ~/project'
 alias cdb='cd ~/project/bootcamp'
 alias cdd='cd ~/project/dotfiles'
+alias vz='vim ~/.zshrc'
+alias vv='vim ~/.vimrc'
 
 ## M1 brew
 export PATH=/opt/homebrew/bin:$PATH
