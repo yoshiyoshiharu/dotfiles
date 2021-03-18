@@ -27,7 +27,7 @@ alias dsp='docker stop'
 alias dp='docker ps -a'
 alias di='docker images'
 alias dv='docker volume'
-alias di='docker network'
+alias dn='docker network'
 
 function deb () {
   docker exec -it $1 /bin/bash
