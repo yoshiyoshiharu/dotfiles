@@ -47,10 +47,18 @@ alias cdd='cd ~/project/dotfiles'
 alias vz='vim ~/.zshrc'
 alias sz='source ~/.zshrc'
 
+function gpsz () {
+  cd ~/project/dotfiles
+  git add .zshrc
+  git commit -m $1
+  git push origin master
+}
+
 function mcd () {
   mkdir $1
   cd $1
 }
+
 ## M1 brew
 export PATH=/opt/homebrew/bin:$PATH
 export PATH="/opt/homebrew/sbin:$PATH"
