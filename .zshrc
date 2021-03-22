@@ -28,10 +28,17 @@ alias dp='docker ps -a'
 alias di='docker images'
 alias dv='docker volume'
 alias dn='docker network'
+alias db='docker build'
 
 function deb () {
   docker exec -it $1 /bin/bash
 }
+
+## Docker Compose alias
+alias dc='docker-compose'
+alias dcu='docker-compose up'
+alias dcd='docker-compose down'
+alias dcp='docker-compose ps'
 
 ## original alias
 alias cdp='cd ~/project'
@@ -40,6 +47,10 @@ alias cdd='cd ~/project/dotfiles'
 alias vz='vim ~/.zshrc'
 alias sz='source ~/.zshrc'
 
+function mcd () {
+  mkdir $1
+  cd $1
+}
 ## M1 brew
 export PATH=/opt/homebrew/bin:$PATH
 export PATH="/opt/homebrew/sbin:$PATH"
