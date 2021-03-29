@@ -1,4 +1,4 @@
-# わいのdotfiles
+# My dotfiles
 
 ## Usage
 ```sh
