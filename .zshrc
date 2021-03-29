@@ -15,7 +15,7 @@ alias gr='git reset'
 alias grh='git reset --hard'
 alias grs='git restore --staged'
 alias gpso='git push origin'
-alias gpsom='git push origin master'
+alias gpsoh='git push origin HEAD'
 alias gplo='git pull origin'
 alias gplom='git pull origin master'
 
