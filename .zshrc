@@ -59,9 +59,14 @@ function mcd () {
   cd $1
 }
 
-## Ruby on Rails alias
-alias r='rails'
+## Ruby alias
 alias rb='ruby'
+alias b='bundle'
+alias be='bundle exec'
+
+
+## Rails alias
+alias r='rails'
 alias rdb='rails db'
 alias rdbm='rails db:migrate'
 
