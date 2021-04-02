@@ -59,6 +59,12 @@ function mcd () {
   cd $1
 }
 
+## Ruby on Rails alias
+alias r='rails'
+alias rb='ruby'
+alias rdb='rails db'
+alias rdbm='rails db:migrate'
+
 ## M1 brew
 export PATH=/opt/homebrew/bin:$PATH
 export PATH="/opt/homebrew/sbin:$PATH"
