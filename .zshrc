@@ -61,6 +61,7 @@ function mcd () {
 
 ## Ruby alias
 alias rb='ruby'
+alias rs='rspec'
 alias b='bundle'
 alias be='bundle exec'
 
