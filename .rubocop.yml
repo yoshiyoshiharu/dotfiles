@@ -7,6 +7,8 @@ Style/SpecialGlobalVars:
 Style/Documentation:
   Enabled: false
 
+Style/StringLiterals:
+  Enabled: false
 # new copsを許可(エラーメッセージがうざい)
 AllCops:
   NewCops: enable

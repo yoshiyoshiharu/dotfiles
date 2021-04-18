@@ -48,9 +48,9 @@ alias cdd='cd ~/project/dotfiles'
 alias vz='vim ~/.zshrc'
 alias sz='source ~/.zshrc'
 
-function gpsz () {
+function gpsd () {
   cd ~/project/dotfiles
-  git add .zshrc
+  git add -u
   git commit -m $1
   git push origin master
 }
