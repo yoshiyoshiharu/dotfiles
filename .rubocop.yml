@@ -1,0 +1,12 @@
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/SpecialGlobalVars:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+# new copsを許可(エラーメッセージがうざい)
+AllCops:
+  NewCops: enable
