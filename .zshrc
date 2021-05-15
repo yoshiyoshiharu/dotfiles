@@ -48,6 +48,7 @@ alias dcrw='docker-compose run web'
 alias cdp='cd ~/project'
 alias cdb='cd ~/project/bootcamp'
 alias cdd='cd ~/project/dotfiles'
+alias cdba='cd ~/project/bootcamp-app'
 alias vz='vim ~/.zshrc'
 alias sz='source ~/.zshrc'
 
