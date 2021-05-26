@@ -65,6 +65,12 @@ function mcd () {
   cd $1
 }
 
+## For bootcamp alias
+function deba () {
+  id=$(docker ps -aqf "name=bootcamp-app_web_1")
+  docker exec -it $id /bin/bash
+}
+
 ## Ruby alias
 alias rb='ruby'
 alias rs='rspec'
