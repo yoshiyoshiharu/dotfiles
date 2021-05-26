@@ -44,6 +44,7 @@ alias dcd='docker-compose down'
 alias dcp='docker-compose ps'
 alias dcr='docker-compose run'
 alias dcrw='docker-compose run web'
+alias dcrs='docker-compose down && docker-compose up -d'
 
 ## original alias
 alias cdp='cd ~/project'
