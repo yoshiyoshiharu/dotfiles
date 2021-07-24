@@ -39,7 +39,7 @@ function deb () {
 
 ## Docker Compose alias
 alias dc='docker-compose'
-alias dcu='docker-compose up'
+alias dcu='docker-compose up -d'
 alias dcd='docker-compose down'
 alias dcp='docker-compose ps'
 alias dcr='docker-compose run'
@@ -83,6 +83,7 @@ alias be='bundle exec'
 alias r='rails'
 alias rdb='rails db'
 alias rdbm='rails db:migrate'
+alias dbrs='dcrw rails db:reset'
 
 ## M1 brew
 export PATH=/opt/homebrew/bin:$PATH
