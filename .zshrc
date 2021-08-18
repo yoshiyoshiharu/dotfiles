@@ -107,3 +107,8 @@ export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/opt/homebrew/opt/openssl@1.1"
 ## python3.9
 export PATH=/opt/homebrew/bin:$PATH
 export PATH=/opt/homebrew/opt/python@3.9/libexec/bin:$PATH
+
+## Go
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
