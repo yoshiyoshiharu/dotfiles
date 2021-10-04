@@ -6,7 +6,6 @@ alias la='ls -laG'
 ## Git alias
 alias ga='git add'
 alias gc='git commit -m'
-alias gca='git commit --amend -m'
 alias gd='git diff'
 alias dgm='git diff master'
 alias gch='git checkout'
@@ -14,7 +13,6 @@ alias gchm='git checkout master'
 alias gs='git status'
 alias gl='git log --oneline'
 alias gb='git branch'
-alias gr='git rebase'
 alias grc='git rebase --continue'
 alias gpso='git push origin'
 alias gpsoh='git push origin HEAD'
@@ -68,7 +66,7 @@ function mcd () {
 
 ## For bootcamp alias
 function deba () {
-  id=$(docker ps -aqf "name=bootcamp-app_web_1")
+  id=$(docker ps -aqf "name=bootcamp-app-web-1")
   docker exec -it $id /bin/bash
 }
 
