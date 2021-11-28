@@ -81,7 +81,10 @@ alias be='bundle exec'
 alias r='rails'
 alias rdb='rails db'
 alias rdbm='rails db:migrate'
-alias dbrs='dcrw rails db:reset'
+alias dbrs='dcd && dcrw rails db:reset'
+
+## Python alias
+alias py='python'
 
 ## M1 brew
 export PATH=/opt/homebrew/bin:$PATH
