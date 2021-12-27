@@ -5,14 +5,16 @@ alias la='ls -laG'
 
 ## Git alias
 alias ga='git add'
-alias gc='git commit -m'
+alias gc='git commit'
 alias gd='git diff'
 alias dgm='git diff master'
 alias gch='git checkout'
+alias gchb='git checkout -b'
 alias gchm='git checkout master'
 alias gs='git status'
 alias gl='git log --oneline'
 alias gb='git branch'
+alias gr='git rebase'
 alias grc='git rebase --continue'
 alias gpso='git push origin'
 alias gpsoh='git push origin HEAD'
@@ -48,7 +50,7 @@ alias dcrs='docker-compose down && docker-compose up -d'
 alias cdp='cd ~/project'
 alias cdb='cd ~/project/bootcamp'
 alias cdd='cd ~/project/dotfiles'
-alias cdba='cd ~/project/bootcamp-app'
+alias cds='cd ~/school/paper'
 alias vz='vim ~/.zshrc'
 alias sz='source ~/.zshrc'
 
@@ -64,18 +66,11 @@ function mcd () {
   cd $1
 }
 
-## For bootcamp alias
-function deba () {
-  id=$(docker ps -aqf "name=bootcamp-app-web-1")
-  docker exec -it $id /bin/bash
-}
-
 ## Ruby alias
 alias rb='ruby'
 alias rs='rspec'
 alias b='bundle'
 alias be='bundle exec'
-
 
 ## Rails alias
 alias r='rails'
