@@ -5,7 +5,7 @@ alias la='ls -laG'
 
 ## Git alias
 alias ga='git add'
-alias gc='git commit'
+alias gc='git commit -m'
 alias gd='git diff'
 alias dgm='git diff master'
 alias gch='git checkout'
@@ -33,7 +33,7 @@ alias dv='docker volume'
 alias dn='docker network'
 alias db='docker build'
 
-function deb () {
+function dex () {
   docker exec -it $1 /bin/bash
 }
 
@@ -43,14 +43,12 @@ alias dcu='docker-compose up -d'
 alias dcd='docker-compose down'
 alias dcp='docker-compose ps'
 alias dcr='docker-compose run'
-alias dcrw='docker-compose run web'
+alias dcrw='docker-compose run --rm web'
 alias dcrs='docker-compose down && docker-compose up -d'
 
 ## original alias
 alias cdp='cd ~/project'
-alias cdb='cd ~/project/bootcamp'
 alias cdd='cd ~/project/dotfiles'
-alias cds='cd ~/school/paper'
 alias vz='vim ~/.zshrc'
 alias sz='source ~/.zshrc'
 
@@ -76,7 +74,7 @@ alias be='bundle exec'
 alias r='rails'
 alias rdb='rails db'
 alias rdbm='rails db:migrate'
-alias dbrs='dcd && dcrw rails db:reset'
+alias dbrs='dcd && dcrw rails db:reset && dcd'
 
 ## Python alias
 alias py='python'
