@@ -37,6 +37,11 @@ function dex () {
   docker exec -it $1 /bin/bash
 }
 
+function dexw () {
+  web_container_id=`docker ps -a | grep web | awk '{print $1}'`
+  docker exec -it $web_container_id /bin/bash
+}
+
 ## Docker Compose alias
 alias dc='docker-compose'
 alias dcu='docker-compose up -d'
@@ -74,7 +79,7 @@ alias be='bundle exec'
 alias r='rails'
 alias rdb='rails db'
 alias rdbm='rails db:migrate'
-alias dbrs='dcd && dcrw rails db:reset && dcd'
+alias dbrs='dcd && dcrw rails db:reset'
 
 ## Python alias
 alias py='python'
