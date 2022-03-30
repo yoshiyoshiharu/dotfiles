@@ -21,6 +21,10 @@ alias gpsoh='git push origin HEAD'
 alias gplo='git pull origin'
 alias gplom='git pull origin master'
 
+function gbD(){
+  git branch | grep $1 | xargs git branch -D 
+}
+
 ## Docker alias
 alias d='docker'
 alias dr='docker run'
@@ -51,7 +55,7 @@ alias dcr='docker-compose run'
 alias dcrw='docker-compose run --rm web'
 alias dcrs='docker-compose down && docker-compose up -d'
 
-## original alias
+## Original alias
 alias cdp='cd ~/project'
 alias cdd='cd ~/project/dotfiles'
 alias vz='vim ~/.zshrc'
