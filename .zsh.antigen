@@ -1,0 +1,4 @@
+antigen bundle git
+antigen bundle zsh-users/zsh-autosuggestions
+
+antigen apply
