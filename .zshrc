@@ -1,3 +1,5 @@
+source ~/.zsh.antigen
+
 ## ls alias
 alias ls='ls -G'
 alias ll='ls -lG'
@@ -59,6 +61,7 @@ alias dcrs='docker-compose down && docker-compose up -d'
 alias cdp='cd ~/project'
 alias cdd='cd ~/project/dotfiles'
 alias vz='vim ~/.zshrc'
+alias vv='vim ~/.vimrc'
 alias sz='source ~/.zshrc'
 
 function gpsd () {
@@ -88,6 +91,12 @@ alias dbrs='dcd && dcrw rails db:reset'
 ## Python alias
 alias py='python'
 
+## zsh plugins
+plugins=(
+  zsh-autosuggestions
+)
+
+
 ## M1 brew
 export PATH=/opt/homebrew/bin:$PATH
 export PATH="/opt/homebrew/sbin:$PATH"
@@ -115,3 +124,19 @@ export PATH=/opt/homebrew/opt/python@3.9/libexec/bin:$PATH
 export GOENV_ROOT="$HOME/.goenv"
 export PATH="$GOENV_ROOT/bin:$PATH"
 eval "$(goenv init -)"
+
+## Git
+autoload -Uz vcs_info
+setopt prompt_subst
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' stagedstr "%F{magenta}!"
+zstyle ':vcs_info:git:*' unstagedstr "%F{yellow}+"
+zstyle ':vcs_info:*' formats "%F{cyan}%c%u[%b]%f"
+zstyle ':vcs_info:*' actionformats '[%b|%a]'
+precmd () { vcs_info }
+
+# Prompt customize
+PROMPT='
+%n@%m%f%b:%F{white}%~%f $ '
+
+RPROMPT=' %F{cyan}$vcs_info_msg_0_%f'
