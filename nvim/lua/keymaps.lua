@@ -4,10 +4,9 @@ local keymap = vim.keymap
 
 -- general keymaps
 
--- terminal
 keymap.set("t", "<Esc>", "<C-\\><C-n>")
 keymap.set("i", "jj", "<ESC>")
-keymap.set("n", "<leader>te", "<cmd>belowright new<CR><cmd>terminal<CR>")
+keymap.set("n", "<C-q>", ":q<cr>")
 
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
