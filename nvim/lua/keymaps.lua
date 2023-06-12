@@ -31,6 +31,6 @@ keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>") -- toggle file explorer
 keymap.set("n", "<leader>te", ":ToggleTerm<CR>")
 
 -- telescope
-keymap.set("n", "<laeder>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
+keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
 keymap.set("n", "<leader>lg", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
 
