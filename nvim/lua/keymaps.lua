@@ -24,12 +24,12 @@ keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
 -- nvim-tree
-keymap.set("n", "<C-b>", ":NvimTreeToggle<CR>") -- toggle file explorer
+keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>") -- toggle file explorer
 
 -- toggle term
 keymap.set("n", "<leader>te", ":ToggleTerm<CR>")
 
 -- telescope
-keymap.set("n", "<C-p>", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
-keymap.set("n", "<C-g>", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
+keymap.set("n", "<laeder>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
+keymap.set("n", "<leader>lg", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
 
