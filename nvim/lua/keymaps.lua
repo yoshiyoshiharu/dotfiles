@@ -9,6 +9,8 @@ keymap.set("i", "jj", "<ESC>")
 keymap.set("n", "<C-q>", ":q<cr>")
 keymap.set("i", "<C-q>", "<ESC>:q<cr>")
 keymap.set("t", "<C-q>", "<ESC>:q<cr>")
+keymap.set("n", "<leader>h", "^")
+keymap.set("n", "<leader>l", "$")
 
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
