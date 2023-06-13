@@ -60,6 +60,9 @@ return require('packer').startup(function(use)
   use { "nvim-telescope/telescope.nvim", branch = "0.1.x" }
   use({ "nvim-telescope/telescope-ui-select.nvim" }) -- for showing lsp code actions
 
+  -- autocompletion
+  use("hrsh7th/nvim-cmp") -- completion plugin
+
   -- snippets
   use("L3MON4D3/LuaSnip") -- snippet engine
   use("saadparwaiz1/cmp_luasnip") -- for autocompletion
