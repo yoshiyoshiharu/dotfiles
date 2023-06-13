@@ -36,9 +36,6 @@ return require('packer').startup(function(use)
 
   use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
-  -- auto save
-  use('pocco81/auto-save.nvim')
-
   -- file explorer
   use("nvim-tree/nvim-tree.lua")
   
@@ -62,6 +59,8 @@ return require('packer').startup(function(use)
 
   -- autocompletion
   use("hrsh7th/nvim-cmp") -- completion plugin
+  use("hrsh7th/cmp-buffer") -- source for text in buffer
+  use("hrsh7th/cmp-path") -- source for file system paths
 
   -- snippets
   use("L3MON4D3/LuaSnip") -- snippet engine
@@ -75,6 +74,19 @@ return require('packer').startup(function(use)
   -- configuring lsp servers
   use("neovim/nvim-lspconfig") -- easily configure language servers
   use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
+    use({
+    "glepnir/lspsaga.nvim",
+    branch = "main",
+    requires = {
+      { "nvim-tree/nvim-web-devicons" },
+      { "nvim-treesitter/nvim-treesitter" },
+    },
+  }) -- enhanced lsp uis
+    use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
+
+  -- formatting & linting
+  use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
+  use("jayp0521/mason-null-ls.nvim") -- bridges gap b/w mason & null-ls
 
   -- treesitter configuration
   use({

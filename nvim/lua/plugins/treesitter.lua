@@ -31,6 +31,7 @@ treesitter.setup({
     "vim",
     "dockerfile",
     "gitignore",
+    "ruby"
   },
   -- auto install above language parsers
   auto_install = true,
