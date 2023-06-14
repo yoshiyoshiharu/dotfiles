@@ -1,7 +1,7 @@
 local opt = vim.opt
 
 -- mouse
-opt.mouse = a
+opt.mouse = "a"
 
 -- line numbers
 opt.number = true
