@@ -59,6 +59,13 @@ return require('packer').startup(function(use)
   use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
   use { "nvim-telescope/telescope.nvim", branch = "0.1.x" }
   use({ "nvim-telescope/telescope-ui-select.nvim" }) -- for showing lsp code actions
+  use {
+    "nvim-telescope/telescope-frecency.nvim",
+    config = function()
+      require"telescope".load_extension("frecency")
+    end,
+    requires = {"kkharji/sqlite.lua"}
+  }
 
   -- autocompletion
   use("hrsh7th/nvim-cmp") -- completion plugin
