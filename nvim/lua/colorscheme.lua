@@ -4,3 +4,4 @@ if not status then
   print("Coorscheme not found!")
   return
 end
+
