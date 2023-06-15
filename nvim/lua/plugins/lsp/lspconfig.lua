@@ -23,14 +23,22 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
+-- ruby
 -- solargraph
 lspconfig.solargraph.setup({
 	cmd = { "solargraph", "stdio" },
 	filetypes = { "ruby" },
 })
 
+-- go
 -- gopls
 lspconfig.gopls.setup({})
+vim.api.nvim_create_autocmd('BufWritePre', {
+  pattern = '*.go',
+  callback = function()
+    vim.lsp.buf.code_action({ context = { only = { 'source.organizeImports' } }, apply = true })
+  end
+})
 
 -- Global mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
