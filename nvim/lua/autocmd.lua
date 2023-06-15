@@ -6,3 +6,4 @@ autocmd("TermOpen", {
 	pattern = "*",
 	command = ":startinsert",
 })
+

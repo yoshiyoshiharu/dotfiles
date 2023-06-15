@@ -35,6 +35,7 @@ return require('packer').startup(function(use)
   -- colorscheme
   use("bluz71/vim-nightfly-guicolors")
   use("jacoborus/tender.vim")
+  use("tomasr/molokai")
 
   use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
