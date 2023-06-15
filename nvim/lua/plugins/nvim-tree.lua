@@ -27,7 +27,7 @@ nvimtree.setup({
     enable = true,
     update_root = true,
   },
-  -- 	git = {
-  -- 		ignore = false,
-  -- 	},
+  git = {
+    ignore = false,
+  },
 })
