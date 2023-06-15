@@ -36,4 +36,3 @@ keymap.set("n", "<leader>te", ":ToggleTerm<CR>")
 -- telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope frecency<cr>") -- find files within current working directory, respects .gitignore
 keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
-

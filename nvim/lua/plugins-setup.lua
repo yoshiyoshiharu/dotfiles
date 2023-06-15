@@ -124,7 +124,7 @@ return require('packer').startup(function(use)
   use("petertriho/nvim-scrollbar")
 
   -- copilot lua
-  use { "zbirenbaum/copilot.lua" }
+  use({"github/copilot.vim"})
 
   if packer_bootstrap then
     require("packer").sync()
