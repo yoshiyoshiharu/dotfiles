@@ -11,10 +11,11 @@ keymap.set("i", "<C-q>", "<ESC>:q<cr>")
 keymap.set("t", "<C-q>", "<ESC>:q<cr>")
 keymap.set("n", "<leader>h", "^")
 keymap.set("n", "<leader>l", "$")
+keymap.set("v", "<leader>h", "^")
+keymap.set("v", "<leader>l", "$")
 
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
-keymap.set("v", "x", "_x")
 
 -- window management
 keymap.set("n", "<leader>sl", "<C-w>v") -- split window vertically
