@@ -120,6 +120,9 @@ return require('packer').startup(function(use)
   -- easy to toggle terminal
   use("akinsho/toggleterm.nvim")
 
+  -- scrollbar
+  use("petertriho/nvim-scrollbar")
+
   if packer_bootstrap then
     require("packer").sync()
   end
