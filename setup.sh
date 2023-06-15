@@ -1,13 +1,13 @@
 #!/bin/bash
 
 dotfiles=$(dirname $0)
-
-# zshに切り替え
-chsh -s `which zsh`
+echo "aaaa"
+echo $dotfiles
 
 for file in $dotfiles/.*
 do
   filename=$(basename $file)
+
 
   [[ $filename == "." ]] && continue
   [[ $filename == ".." ]] && continue
@@ -15,5 +15,5 @@ do
   [[ $filename == ".DS_Store" ]] && continue
 
   unlink $HOME/$filename
-  ln -s $file $HOME/$filename
+  ln -s $dotfiles/$file $HOME/$filename
 done
