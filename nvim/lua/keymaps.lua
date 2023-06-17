@@ -29,6 +29,7 @@ keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
 -- nvim-tree
 keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>") -- toggle file explorer
+keymap.set("n", "<leader>tr", ":NvimTreeRefresh<CR>") -- toggle file explorer
 
 -- toggle term
 keymap.set("n", "<leader>te", ":ToggleTerm<CR>")
