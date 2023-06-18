@@ -128,6 +128,13 @@ return require('packer').startup(function(use)
 
   use("lukas-reineke/indent-blankline.nvim")
 
+  use {
+	"tversteeg/registers.nvim",
+	  config = function()
+		  require("registers").setup()
+	  end,
+  }
+
   if packer_bootstrap then
     require("packer").sync()
   end
