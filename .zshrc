@@ -122,7 +122,7 @@ export PATH=/opt/homebrew/opt/python@3.9/libexec/bin:$PATH
 
 ## Go
 export GOENV_ROOT="$HOME/.goenv"
-export PATH="$GOENV_ROOT/bin:$PATH"
+export PATH="$HOME/go/bin:$PATH"
 eval "$(goenv init -)"
 
 ## Git
