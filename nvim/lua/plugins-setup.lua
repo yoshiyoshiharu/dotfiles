@@ -13,7 +13,7 @@ local packer_bootstrap = ensure_packer() -- true if packer was just installed
 
 -- autocommand that reloads neovim and installs/updates/removes plugins
 -- when file is saved
-vim.cmd([[ 
+vim.cmd([[
   augroup packer_user_config
     autocmd!
     autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
@@ -41,7 +41,7 @@ return require('packer').startup(function(use)
 
   -- file explorer
   use("nvim-tree/nvim-tree.lua")
-  
+
   -- essential plugins
   use("tpope/vim-surround") -- add, delete, change surroundings (it's awesome)
   use("inkarkat/vim-ReplaceWithRegister") -- replace with register contents using motion (gr + motion)
@@ -125,6 +125,8 @@ return require('packer').startup(function(use)
 
   -- copilot lua
   use({"github/copilot.vim"})
+
+  use("lukas-reineke/indent-blankline.nvim")
 
   if packer_bootstrap then
     require("packer").sync()
