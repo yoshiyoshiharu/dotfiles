@@ -37,6 +37,3 @@ opt.splitbelow = true
 
 opt.iskeyword:append("-")
 
--- show hidden characters
-opt.list = true
--- opt.listchars:append "space:⋅"
