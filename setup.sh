@@ -8,7 +8,6 @@ for file in $dotfiles/.*
 do
   filename=$(basename $file)
 
-
   [[ $filename == "." ]] && continue
   [[ $filename == ".." ]] && continue
   [[ $filename == ".git" ]] && continue
