@@ -32,14 +32,12 @@ keymap.set("n", "<C-=>", "<C-w>5>")
 keymap.set("n", "<C-_>", "<C-w>5<")
 
 -- nvim-tree
-keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>") -- toggle file explorer
-keymap.set("n", "<leader>tr", ":NvimTreeRefresh<CR>") -- toggle file explorer
-
--- toggle term
-keymap.set("n", "<leader>te", ":ToggleTerm<CR>")
+keymap.set("n", "<leader>n", ":NvimTreeToggle<CR>") -- toggle file explorer
 
 -- telescope
-keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
-keypmap.set("n","<leader>fc", "<cmd>Telescope frecency<cr>") -- find open buffers
-keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
+keymap.set("n", "<leader>tf", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
+keymap.set("n","<leader>tc", "<cmd>Telescope frecency<cr>") -- find open buffers
+keymap.set("n", "<leader>tl", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
+keymap.set("n", "<leader>tg", "<cmd>Telescope git_bcommits<cr>") -- find string in current working directory as you type
+keymap.set("n", "<leader>tt", "<cmd>Telescope<cr>") -- find string in current working directory as you type
 
