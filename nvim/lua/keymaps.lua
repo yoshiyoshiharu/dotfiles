@@ -22,22 +22,18 @@ keymap.set("n", "x", '"_x')
 keymap.set("n", "<leader>sl", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sj", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
--- keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
--- keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
--- keymap.set("n", "<leader>tn", ":tabn<CR>") --  go to next tab
--- keymap.set("n", "<leader>tp", ":tabp<CR>") --  go to previous tab
 
 -- window size
 keymap.set("n", "<C-=>", "<C-w>5>")
 keymap.set("n", "<C-_>", "<C-w>5<")
 
 -- nvim-tree
-keymap.set("n", "<leader>n", ":NvimTreeToggle<CR>") -- toggle file explorer
+keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>") -- toggle file explorer
 
 -- telescope
-keymap.set("n", "<leader>tf", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
-keymap.set("n","<leader>tc", "<cmd>Telescope frecency<cr>") -- find open buffers
-keymap.set("n", "<leader>tl", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
-keymap.set("n", "<leader>tg", "<cmd>Telescope git_bcommits<cr>") -- find string in current working directory as you type
-keymap.set("n", "<leader>tt", "<cmd>Telescope<cr>") -- find string in current working directory as you type
+keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
+keymap.set("n","<leader>fc", "<cmd>Telescope frecency<cr>") -- find open buffers
+keymap.set("n", "<leader>fl", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
+keymap.set("n", "<leader>fg", "<cmd>Telescope git_bcommits<cr>") -- find string in current working directory as you type
+keymap.set("n", "<leader>ft", "<cmd>Telescope<cr>") -- find string in current working directory as you type
 
