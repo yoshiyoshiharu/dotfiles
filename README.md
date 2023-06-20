@@ -11,4 +11,4 @@ bash dotfiles/setup.sh
 brew install node
 brew install ripgrep
 brew install tmux
-``
+```
