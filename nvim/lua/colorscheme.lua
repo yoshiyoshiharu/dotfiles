@@ -5,3 +5,4 @@ if not status then
   return
 end
 
+vim.cmd("highlight ColorColumn guibg=LightBlue")
