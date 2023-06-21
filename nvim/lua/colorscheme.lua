@@ -6,3 +6,7 @@ if not status then
 end
 
 vim.cmd("highlight ColorColumn guibg=LightBlue")
+
+-- Highlight trailing whitespace
+vim.cmd("highlight TrailingWhiteSpace ctermbg=red guibg=DarkRed")
+vim.cmd("match TrailingWhiteSpace /\\s\\+$/")
