@@ -17,6 +17,7 @@ keymap.set("v", "<C-c>", "y")
 
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
+keymap.set("v", "x", '"_x')
 
 -- window management
 keymap.set("n", "<leader>sl", "<C-w>v") -- split window vertically
