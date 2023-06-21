@@ -25,6 +25,8 @@ opt.termguicolors = true
 opt.background = "dark" -- colorschemes that can be light or dark will be made dark
 opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 
+opt.colorcolumn = "100"
+
 -- backspace
 opt.backspace = "indent,eol,start"
 
@@ -36,4 +38,3 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.iskeyword:append("-")
-
