@@ -1,7 +1,7 @@
 require("plugins-setup")
 require("options")
 require("keymaps")
-require("autocmd")
+require("cmd")
 require("colorscheme")
 require("plugins.nvim-tree")
 require("plugins.lualine")
