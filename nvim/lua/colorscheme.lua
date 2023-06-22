@@ -5,7 +5,7 @@ if not status then
   return
 end
 
-vim.cmd("highlight ColorColumn guibg=LightBlue")
+vim.cmd("highlight ColorColumn guibg=DarkBlue")
 
 -- Highlight trailing whitespace
 vim.cmd("highlight TrailingWhiteSpace ctermbg=red guibg=DarkRed")
