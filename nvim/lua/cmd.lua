@@ -6,3 +6,4 @@ autocmd("TermOpen", {
 	command = ":startinsert",
 })
 
+vim.api.nvim_create_user_command('Ghpr', '!gh pr list --web -s all -S <q-args>', { nargs = 1 })

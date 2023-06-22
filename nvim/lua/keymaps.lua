@@ -38,3 +38,5 @@ keymap.set("n", "<leader>fl", "<cmd>Telescope live_grep<cr>") -- find string in 
 keymap.set("n", "<leader>fg", "<cmd>Telescope git_bcommits<cr>") -- find string in current working directory as you type
 keymap.set("n", "<leader>ft", "<cmd>Telescope<cr>") -- find string in current working directory as you type
 
+-- git
+keymap.set("n", "<leader>gb", "<cmd>Git blame<cr>") -- open git status
