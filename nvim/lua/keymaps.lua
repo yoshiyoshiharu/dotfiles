@@ -25,8 +25,8 @@ keymap.set("n", "<leader>sj", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
 
 -- window size
-keymap.set("n", "<C-=>", "<C-w>5>")
-keymap.set("n", "<C-_>", "<C-w>5<")
+keymap.set("n", "<leader>=", "<C-w>15>")
+keymap.set("n", "<leader>-", "<C-w>15<")
 
 -- nvim-tree
 keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>") -- toggle file explorer
