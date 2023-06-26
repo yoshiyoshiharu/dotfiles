@@ -60,7 +60,12 @@ return require('packer').startup(function(use)
 
   -- fuzzy finding
   use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
-  use { "nvim-telescope/telescope.nvim", branch = "0.1.x" }
+  use {
+    "nvim-telescope/telescope.nvim", branch = "0.1.x",
+    requires = {
+      { "nvim-telescope/telescope-live-grep-args.nvim" },
+    },
+  }
   use({ "nvim-telescope/telescope-ui-select.nvim" }) -- for showing lsp code actions
   use {
     "nvim-telescope/telescope-frecency.nvim",
