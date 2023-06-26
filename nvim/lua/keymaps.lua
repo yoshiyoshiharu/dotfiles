@@ -6,6 +6,11 @@ local keymap = vim.keymap
 
 keymap.set("t", "<Esc>", "<C-\\><C-n>")
 keymap.set("i", "jj", "<ESC>")
+keymap.set("i", "<C-l>", "<Right>")
+keymap.set("i", "<C-h>", "<Left>")
+keymap.set("i", "<C-k>", "<Up>")
+keymap.set("i", "<C-j>", "<Down>")
+
 keymap.set("n", "<C-q>", ":q<cr>")
 keymap.set("i", "<C-q>", "<ESC>:q<cr>")
 keymap.set("t", "<C-q>", "<ESC>:q<cr>")
@@ -32,9 +37,9 @@ keymap.set("n", "<leader>-", "<C-w>15<")
 keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>") -- toggle file explorer
 
 -- telescope
-keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
+keymap.set("n", "<C-p>", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
 keymap.set("n","<leader>fc", "<cmd>Telescope frecency<cr>") -- find open buffers
-keymap.set("n", "<leader>fl", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
+keymap.set("n", "<C-f>", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
 keymap.set("n", "<leader>fg", "<cmd>Telescope git_bcommits<cr>") -- find string in current working directory as you type
 keymap.set("n", "<leader>ft", "<cmd>Telescope<cr>") -- find string in current working directory as you type
 
