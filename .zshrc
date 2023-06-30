@@ -64,32 +64,10 @@ alias vz='vim ~/.zshrc'
 alias vv='vim ~/.vimrc'
 alias sz='source ~/.zshrc'
 
-function gpsd () {
-  cd ~/project/dotfiles
-  git add -u
-  git commit -m $1
-  git push origin master
-}
-
 function mcd () {
   mkdir $1
   cd $1
 }
-
-## Ruby alias
-alias rb='ruby'
-alias rs='rspec'
-alias b='bundle'
-alias be='bundle exec'
-
-## Rails alias
-alias r='rails'
-alias rdb='rails db'
-alias rdbm='rails db:migrate'
-alias dbrs='dcd && dcrw rails db:reset'
-
-## Python alias
-alias py='python'
 
 ## zsh plugins
 plugins=(
@@ -100,9 +78,6 @@ plugins=(
 ## M1 brew
 export PATH=/opt/homebrew/bin:$PATH
 export PATH="/opt/homebrew/sbin:$PATH"
-
-## anyenv
-eval "$(anyenv init -)"
 
 ## rbenv
 export RBENV_ROOT=/opt/homebrew/opt/rbenv
@@ -116,9 +91,6 @@ export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@1.1/lib/pkgconfig"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/opt/homebrew/opt/openssl@1.1"
 
-## python3.9
-export PATH=/opt/homebrew/bin:$PATH
-export PATH=/opt/homebrew/opt/python@3.9/libexec/bin:$PATH
 
 ## Go
 export GOENV_ROOT="$HOME/.goenv"

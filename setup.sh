@@ -1,12 +1,12 @@
 #!/bin/bash
 
 dotfiles=$(dirname $0)
-echo "aaaa"
 echo $dotfiles
 
 for file in $dotfiles/.*
 do
   filename=$(basename $file)
+  echo $filename
 
   [[ $filename == "." ]] && continue
   [[ $filename == ".." ]] && continue
