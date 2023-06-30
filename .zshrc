@@ -13,6 +13,9 @@ alias dgm='git diff master'
 alias gch='git checkout'
 alias gchb='git checkout -b'
 alias gchm='git checkout master'
+alias gchd='git checkout develop'
+alias grsh='git reset --hard'
+alias grss='git reset --soft'
 alias gs='git status'
 alias gl='git log --oneline'
 alias gb='git branch'
@@ -22,6 +25,7 @@ alias gpso='git push origin'
 alias gpsoh='git push origin HEAD'
 alias gplo='git pull origin'
 alias gplom='git pull origin master'
+alias gplod='git pull origin develop'
 
 function gbD(){
   git branch | grep $1 | xargs git branch -D 
@@ -60,8 +64,8 @@ alias dcrs='docker-compose down && docker-compose up -d'
 ## Original alias
 alias cdp='cd ~/project'
 alias cdd='cd ~/project/dotfiles'
-alias vz='vim ~/.zshrc'
-alias vv='vim ~/.vimrc'
+alias vz='nvim ~/.zshrc'
+alias vv='nvim ~/.vimrc'
 alias sz='source ~/.zshrc'
 
 function mcd () {
