@@ -7,7 +7,7 @@ alias la='ls -laG'
 
 ## Git alias
 alias ga='git add'
-alias gc='git commit -m'
+alias gcm='git commit -m'
 alias gd='git diff'
 alias dgm='git diff master'
 alias gch='git checkout'
