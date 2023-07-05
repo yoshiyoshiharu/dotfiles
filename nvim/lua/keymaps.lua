@@ -5,7 +5,9 @@ local keymap = vim.keymap
 -- general keymaps
 
 keymap.set("t", "<Esc>", "<C-\\><C-n>")
-keymap.set("i", "jj", "<ESC>")
+keymap.set("i", "jj", "<ESC>:w<cr>")
+keymap.set("i", "<ESC>", "<ESC>:w<cr>")
+keymap.set("i", "<C-c>", "<ESC>:w<cr>")
 keymap.set("i", "<C-l>", "<Right>")
 keymap.set("i", "<C-h>", "<Left>")
 keymap.set("i", "<C-k>", "<Up>")
