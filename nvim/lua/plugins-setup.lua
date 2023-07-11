@@ -39,6 +39,8 @@ return require('packer').startup(function(use)
 
   use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
+  use("szw/vim-maximizer")
+
   -- file explorer
   use("nvim-tree/nvim-tree.lua")
 

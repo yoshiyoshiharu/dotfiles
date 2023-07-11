@@ -41,6 +41,9 @@ keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
 keymap.set("n", "<leader>=", "<C-w>15>")
 keymap.set("n", "<leader>-", "<C-w>15<")
 
+-- vim maximizer
+keymap.set("n", "<leader>m", ":MaximizerToggle<CR>")
+
 -- nvim-tree
 keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>") -- toggle file explorer
 keymap.set("n", "<leader>tr", ":NvimTreeRefresh<CR>") -- toggle file explorer

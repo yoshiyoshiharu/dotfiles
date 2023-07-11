@@ -65,6 +65,8 @@ alias dcrs='docker-compose down && docker-compose up -d'
 ## Original alias
 alias cdp='cd ~/project'
 alias cdd='cd ~/project/dotfiles'
+alias cds='cd ~/ga/supplier-article'
+alias cdc='cd ~/ga/common-db-docker'
 alias vz='nvim ~/.zshrc'
 alias vv='nvim ~/.vimrc'
 alias sz='source ~/.zshrc'
