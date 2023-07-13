@@ -23,7 +23,6 @@ keymap.set("n", "<leader>l", "$")
 keymap.set("n", "cp", ":let @+ = expand('%')<cr>")
 keymap.set("v", "<leader>h", "^")
 keymap.set("v", "<leader>l", "$")
-keymap.set("v", "<C-c>", "y")
 
 -- delete single character without copying into register
 keymap.set("n", "x", '"_x')
