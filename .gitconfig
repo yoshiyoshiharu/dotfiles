@@ -10,7 +10,7 @@
   com = checkout master
   b = branch
   d = diff
-  l = log --oneline --graph --decorate
+  l = log --oneline
   ps = push
   pl = pull
   pso = push origin
