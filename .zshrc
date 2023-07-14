@@ -5,33 +5,6 @@ alias ls='ls -G'
 alias ll='ls -lG'
 alias la='ls -laG'
 
-## Git alias
-alias ga='git add'
-alias gc='git commit'
-alias gd='git diff'
-alias dgm='git diff master'
-alias gch='git checkout'
-alias gchb='git checkout -b'
-alias gchm='git checkout master'
-alias gchd='git checkout develop'
-alias grsh='git reset --hard'
-alias grss='git reset --soft'
-alias gst='git stash'
-alias gs='git status'
-alias gl='git log --oneline'
-alias gb='git branch'
-alias gr='git rebase'
-alias grc='git rebase --continue'
-alias gpso='git push origin'
-alias gpsoh='git push origin HEAD'
-alias gplo='git pull origin'
-alias gplom='git pull origin master'
-alias gplod='git pull origin develop'
-
-function gbD(){
-  git branch | grep $1 | xargs git branch -D 
-}
-
 ## Docker alias
 alias d='docker'
 alias dr='docker run'

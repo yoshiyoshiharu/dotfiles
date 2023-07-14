@@ -1,0 +1,21 @@
+[user]
+	email = haruki.osaka.u@gmail.com
+	name = yoshiyoshiharu
+[alias]
+  s = status
+  a = add
+  c = commit
+  co = checkout
+  cod = checkout develop
+  com = checkout master
+  b = branch
+  d = diff
+  l = log --oneline --graph --decorate
+  ps = push
+  pl = pull
+  pso = push origin
+  plo = pull origin
+  st = stash
+  rs = reset
+  rsh = reset --hard
+
