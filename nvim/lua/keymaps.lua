@@ -21,6 +21,7 @@ keymap.set("t", "<C-q>", "<ESC>:q<cr>")
 keymap.set("n", "<leader>h", "^")
 keymap.set("n", "<leader>l", "$")
 keymap.set("n", "cp", ":let @+ = expand('%')<cr>")
+keymap.set("n", "<leader>no", ":nohl<CR>")
 keymap.set("v", "<leader>h", "^")
 keymap.set("v", "<leader>l", "$")
 
