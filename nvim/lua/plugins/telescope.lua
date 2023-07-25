@@ -36,12 +36,10 @@ telescope.setup({
         i = {
           ["<C-l>"] = lga_actions.quote_prompt(),
           ["<C-i>"] = lga_actions.quote_prompt({ postfix = " --iglob " }),
+          ["<C-w>"] = lga_actions.quote_prompt({ postfix = " -w " }),
+          ["<C-s>"] = lga_actions.quote_prompt({ postfix = " -s " }),
         },
       },
-      -- ... also accepts theme settings, for example:
-      -- theme = "dropdown", -- use dropdown theme
-      -- theme = { }, -- use own theme spec
-      -- layout_config = { mirror=true }, -- mirror preview pane
     },
     ["ui-select"] = {
       themes.get_dropdown({}),
