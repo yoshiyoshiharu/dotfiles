@@ -54,3 +54,6 @@ keymap.set("n", "<leader>ft", "<cmd>Telescope<cr>") -- find string in current wo
 
 -- git
 keymap.set("n", "<leader>gb", "<cmd>Git blame<cr>") -- open git status
+
+-- lspsaga
+keymap.set("n", "<leader>te", ":Lspsaga term_toggle<CR>") -- code action
