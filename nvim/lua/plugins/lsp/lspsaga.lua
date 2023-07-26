@@ -13,7 +13,7 @@ saga.setup({
   },
   ui = {
     colors = {
-      normal_bg = "#022746",
+      -- normal_bg = "#022746",
     },
   },
 })
