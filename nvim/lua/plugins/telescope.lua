@@ -23,8 +23,11 @@ telescope.setup({
   defaults = {
     mappings = {
       i = {
-        ["<C-k>"] = actions.move_selection_previous, -- move to prev result
-        ["<C-j>"] = actions.move_selection_next, -- move to next result
+        ["<C-k>"] = actions.move_selection_previous,
+        ["<C-j>"] = actions.move_selection_next,
+        ["<C-h>"] = actions.preview_scrolling_left,
+        ["<C-l>"] = actions.preview_scrolling_right,
+        ["<C-q>"] = actions.close,
       },
     },
   },
@@ -34,7 +37,7 @@ telescope.setup({
       -- define mappings, e.g.
       mappings = { -- extend mappings
         i = {
-          ["<C-l>"] = lga_actions.quote_prompt(),
+          ["<C-n>"] = lga_actions.quote_prompt(),
           ["<C-i>"] = lga_actions.quote_prompt({ postfix = " --iglob " }),
           ["<C-w>"] = lga_actions.quote_prompt({ postfix = " -w " }),
           ["<C-s>"] = lga_actions.quote_prompt({ postfix = " -s " }),

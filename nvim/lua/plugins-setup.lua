@@ -63,7 +63,7 @@ return require('packer').startup(function(use)
   -- fuzzy finding
   use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
   use {
-    "nvim-telescope/telescope.nvim", branch = "0.1.x",
+    "nvim-telescope/telescope.nvim", branch = "master",
     requires = {
       { "nvim-telescope/telescope-live-grep-args.nvim" },
     },
