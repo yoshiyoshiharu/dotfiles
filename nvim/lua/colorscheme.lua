@@ -7,8 +7,10 @@ if not status then
   return
 end
 
+-- change colors
 vim.cmd("highlight ColorColumn guibg=DarkBlue")
 vim.cmd("highlight Visual guibg=#555555")
+vim.cmd("highlight DiffText guibg=DarkBlue")
 
 -- Highlight trailing whitespace
 vim.cmd("highlight TrailingWhiteSpace ctermbg=red guibg=DarkRed")
