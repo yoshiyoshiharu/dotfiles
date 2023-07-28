@@ -1,19 +1,13 @@
--- import lspsaga safely
-local saga_status, saga = pcall(require, "lspsaga")
-if not saga_status then
-  return
-end
-
-saga.setup({
-  -- keybinds for navigation in lspsaga window
-  scroll_preview = { scroll_down = "<C-f>", scroll_up = "<C-b>" },
-  -- use enter to open file with definition preview
-  definition = {
-    edit = "<CR>",
+require("lspsaga").setup({
+  border_style = "single",
+  symbol_in_winbar = {
+    enable = true,
   },
-  ui = {
-    colors = {
-      -- normal_bg = "#022746",
-    },
+  code_action_lightbulb = {
+    enable = true,
+  },
+  show_outline = {
+    win_width = 50,
+    auto_preview = false,
   },
 })
