@@ -58,3 +58,5 @@ keymap.set("n", "<leader>gb", "<cmd>Git blame<cr>") -- open git status
 -- lsp
 keymap.set("n", "<leader>te", ":Lspsaga term_toggle<CR>") -- code action
 keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>") -- go to definition
+keymap.set("n", "go", "<cmd>Lspsaga goto_definition<CR>") -- go to definition
+keymap.set("n", "rn", "<cmd>Lspsaga rename<CR>") -- rename

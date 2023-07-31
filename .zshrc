@@ -27,10 +27,7 @@ alias gpsoh='git push origin HEAD'
 alias gplo='git pull origin'
 alias gplom='git pull origin master'
 alias gplod='git pull origin develop'
-
-function gbD(){
-  git branch | grep $1 | xargs git branch -D 
-}
+alias lg='lazygit'
 
 ## Docker alias
 alias d='docker'
@@ -67,8 +64,7 @@ alias cdp='cd ~/project'
 alias cdd='cd ~/project/dotfiles'
 alias cds='cd ~/ga/supplier-article'
 alias cdc='cd ~/ga/common-db-docker'
-alias vz='nvim ~/.zshrc'
-alias vv='nvim ~/.vimrc'
+alias vd='nvim ~/project/dotfiles'
 alias sz='source ~/.zshrc'
 
 function mcd () {
@@ -97,7 +93,6 @@ export LDFLAGS="-L/opt/homebrew/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include"
 export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@1.1/lib/pkgconfig"
 export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/opt/homebrew/opt/openssl@1.1"
-
 
 ## Go
 export GOENV_ROOT="$HOME/.goenv"
