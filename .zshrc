@@ -83,9 +83,7 @@ export PATH=/opt/homebrew/bin:$PATH
 export PATH="/opt/homebrew/sbin:$PATH"
 
 ## rbenv
-export RBENV_ROOT=/opt/homebrew/opt/rbenv
-export PATH=$RBENV_ROOT/bin:$PATH
-eval "$(rbenv init -)"
+eval "$(rbenv init - zsh)"
 
 ## openssl
 export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
