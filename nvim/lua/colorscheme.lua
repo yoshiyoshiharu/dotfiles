@@ -11,6 +11,8 @@ end
 vim.cmd("highlight ColorColumn guibg=DarkBlue")
 vim.cmd("highlight Visual guibg=#555555")
 vim.cmd("highlight DiffText guibg=DarkBlue")
+vim.cmd("highlight TSPunctBracket guifg=#aaaaaa")
+vim.cmd("highlight TSPunctDelimiter guifg=#aaaaaa")
 
 -- Highlight trailing whitespace
 vim.cmd("highlight TrailingWhiteSpace ctermbg=red guibg=DarkRed")
