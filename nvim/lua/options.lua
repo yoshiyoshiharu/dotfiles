@@ -41,4 +41,5 @@ opt.iskeyword:append("-")
 
 opt.swapfile = false
 
-opt.autoindent = false
+opt.smartindent = true
+opt.autoindent = true
