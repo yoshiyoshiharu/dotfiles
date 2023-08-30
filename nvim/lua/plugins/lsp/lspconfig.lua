@@ -47,6 +47,8 @@ lspconfig.tsserver.setup {
   cmd = { "typescript-language-server", "--stdio" }
 }
 
+lspconfig.emmet_language_server.setup({})
+
 lspconfig.tailwindcss.setup {
   on_attach = on_attach,
   filetypes = { "html", "css", "scss", "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" },
