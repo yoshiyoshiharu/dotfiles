@@ -148,6 +148,8 @@ return require('packer').startup(function(use)
     require('git-conflict').setup()
   end}
 
+  use 'mg979/vim-visual-multi'
+
   if packer_bootstrap then
     require("packer").sync()
   end
