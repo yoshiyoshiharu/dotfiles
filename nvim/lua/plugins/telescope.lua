@@ -28,6 +28,7 @@ telescope.setup({
         ["<C-h>"] = actions.preview_scrolling_left,
         ["<C-l>"] = actions.preview_scrolling_right,
         ["<C-q>"] = actions.close,
+        ["<C-f>"] = false,
       },
     },
   },
