@@ -31,6 +31,8 @@ lspconfig.solargraph.setup({
 	filetypes = { "ruby" },
 })
 
+lspconfig.rubocop.setup({})
+
 -- go
 -- gopls
 lspconfig.gopls.setup({})
