@@ -96,6 +96,12 @@ zstyle ':vcs_info:*' formats "%F{cyan}%c%u[%b]%f"
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd () { vcs_info }
 
+## edit command line
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey '^xe' edit-command-line
+
+
 function left-prompt {
   name_t='179m%}'      # user name text clolr
   name_b='000m%}'    # user name background color

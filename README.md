@@ -13,3 +13,10 @@ brew install node
 brew install ripgrep
 brew install tmux
 ```
+
+## TreeSitters
+If you need erb treesitter, run below.
+
+```vim
+:TSInstall erb
+```
