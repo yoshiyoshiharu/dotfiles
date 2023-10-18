@@ -24,7 +24,7 @@ keymap.set("n", "<leader>w", "<C-w>x")
 keymap.set("n", "cp", ":let @+ = expand('%')<cr>")
 keymap.set("n", "<CR>", "a<Return><Esc>^k")
 keymap.set("n", "<leader>no", ":nohl<CR>")
-keymap.set("n", "<leader>hi", ":lua print(vim.inspect(vim.treesitter.get_captures_at_cursor(0)))<CR>")
+keymap.set("n", "<leader>gr", ":lua print(vim.inspect(vim.treesitter.get_captures_at_cursor(0)))<CR>")
 keymap.set("v", "<leader>h", "^")
 keymap.set("v", "<leader>l", "$")
 
