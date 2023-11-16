@@ -64,3 +64,6 @@ keymap.set("n", "<leader>te", ":Lspsaga term_toggle<CR>") -- code action
 keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>") -- go to definition
 keymap.set("n", "go", "<cmd>Lspsaga goto_definition<CR>") -- go to definition
 keymap.set("n", "rn", "<cmd>Lspsaga rename<CR>") -- rename
+
+-- coplilot
+keymap.set("n", "<leader>cp", ":Copilot panel<CR>") -- open copilot panel
