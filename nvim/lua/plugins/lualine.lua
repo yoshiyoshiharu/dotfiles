@@ -5,12 +5,12 @@ if not status then
 end
 
 -- get lualine nightfly theme
-local lualine_nightfly = require("lualine.themes.nightfly")
+local lualine_theme = require("lualine.themes.base16")
 
 -- configure lualine with modified theme
 lualine.setup({
   options = {
-    theme = lualine_nightfly,
+    theme = lualine_theme,
   },
   sections = {
     lualine_c = {
