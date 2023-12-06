@@ -1,6 +1,6 @@
 vim.g.sonokai_transparent_background = 1
 
-local status, _ = pcall(vim.cmd, "colorscheme sonokai")
+local status, _ = pcall(vim.cmd, "colorscheme molokai")
 
 if not status then
   print("Colorscheme not found!")
