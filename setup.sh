@@ -14,5 +14,5 @@ do
   [[ $filename == ".DS_Store" ]] && continue
 
   unlink $HOME/$filename
-  ln -s $dotfiles/$file $HOME/$filename
+  ln -s $dotfiles/$filename $filename
 done
