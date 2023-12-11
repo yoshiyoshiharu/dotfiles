@@ -1,7 +1,11 @@
 #!/bin/bash
 
+current_dir=$PWD
+
 dotfiles=$(dirname $0)
 echo $dotfiles
+
+cd $dotfiles
 
 for file in $dotfiles/.*
 do
@@ -16,3 +20,5 @@ do
   unlink $HOME/$filename
   ln -s $dotfiles/$filename $filename
 done
+
+cd $current_dir
