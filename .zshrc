@@ -119,3 +119,7 @@ function left-prompt {
 
 PROMPT=`left-prompt`
 RPROMPT=' %F{cyan}$vcs_info_msg_0_%f'
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/shims:$PATH"
