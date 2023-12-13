@@ -1,6 +1,7 @@
 source ~/.zsh.antigen
 
 export EDITOR=nvim
+bindkey -e
 
 ## ls alias
 alias ls='ls -G'
