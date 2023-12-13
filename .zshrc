@@ -1,5 +1,7 @@
 source ~/.zsh.antigen
 
+export EDITOR=nvim
+
 ## ls alias
 alias ls='ls -G'
 alias ll='ls -lG'
@@ -123,3 +125,6 @@ RPROMPT=' %F{cyan}$vcs_info_msg_0_%f'
 eval "$(/opt/homebrew/bin/brew shellenv)"
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.rbenv/shims:$PATH"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
+
