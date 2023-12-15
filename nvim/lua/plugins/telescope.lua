@@ -27,8 +27,12 @@ telescope.setup({
         ["<C-j>"] = actions.move_selection_next,
         ["<C-h>"] = actions.preview_scrolling_left,
         ["<C-l>"] = actions.preview_scrolling_right,
-        ["<C-q>"] = actions.close,
         ["<C-f>"] = false,
+        ["<C-f>"] = actions.send_selected_to_qflist + actions.open_qflist, -- send selected to quickfixlist
+        ["<C-]"] = actions.cycle_history_next,
+        ["<C-[>"] = actions.cycle_history_prev,
+        ["<C-c>"] = actions.close,
+        ["<C-q>"] = actions.close,
       },
     },
   },
