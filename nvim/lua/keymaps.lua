@@ -68,7 +68,7 @@ keymap.set("n", "go", "<cmd>Lspsaga goto_definition<CR>") -- go to definition
 keymap.set("n", "rn", "<cmd>Lspsaga rename<CR>") -- rename
 
 -- Diffview
-keymap.set("n", "<leader>dv", ":DiffviewOpen head..develop") -- open diffview
+keymap.set("n", "<leader>dv", ":DiffviewOpen") -- open diffview
 
 -- coplilot
 keymap.set("n", "<leader>cp", ":Copilot panel<CR>") -- open copilot panel

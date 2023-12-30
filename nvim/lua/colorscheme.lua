@@ -18,6 +18,7 @@ vim.cmd("highlight TSSymbol guifg=#A4C6FF")
 vim.cmd("highlight TSFunction guifg=#CC99FF")
 vim.cmd("highlight TSFunctionCall guifg=#CC99FF")
 vim.cmd("highlight NvimTreeFolderName guifg=#ffffff")
+vim.cmd("highlight DiffText guibg=#0047AB guifg=#ffffff")
 
 
 -- Highlight trailing whitespace
