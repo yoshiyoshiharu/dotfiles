@@ -52,7 +52,7 @@ keymap.set("n", "<leader>tr", ":NvimTreeRefresh<CR>") -- toggle file explorer
 keymap.set("n", "<leader>tx", ":NvimTreeCollapse<CR>") -- toggle file explorer
 
 -- telescope
-keymap.set("n", "<C-p>", "<cmd>Telescope find_files<cr>") -- find files within current working directory, respects .gitignore
+keymap.set("n", "<C-p>", "<cmd>Telescope find_files hiddden=true<cr>") -- find files within current working directory, respects .gitignore
 keymap.set("n","<leader>fc", "<cmd>Telescope frecency<cr>") -- find open buffers
 keymap.set("n", "<C-f>", "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>") -- find string in current working directory as you type
 keymap.set("n", "<leader>fg", "<cmd>Telescope git_bcommits<cr>") -- find string in current working directory as you type
