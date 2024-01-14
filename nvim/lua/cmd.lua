@@ -13,6 +13,6 @@ vim.api.nvim_create_user_command("Copypath", function()
   local git_root = vim.fn.systemlist("git rev-parse --show-toplevel")[1]
   local relative_file_path = string.sub(absolute_file_path, string.len(git_root) + 2)
 
-  vim.fn.setreg("+", relative_file_pathpath)
+  vim.fn.setreg("*", relative_file_path) -- Copy to system clipboard register
   vim.notify('Copied "' .. relative_file_path .. '" to the clipboard!')
 end, {})
