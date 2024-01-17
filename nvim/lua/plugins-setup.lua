@@ -69,7 +69,12 @@ return require('packer').startup(function(use)
     },
   }
   use({ "nvim-telescope/telescope-ui-select.nvim" }) -- for showing lsp code actions
-
+  use {
+    "nvim-telescope/telescope-frecency.nvim",
+    config = function()
+      require("telescope").load_extension "frecency"
+    end,
+  }
   -- autocompletion
   use("hrsh7th/nvim-cmp") -- completion plugin
   use("hrsh7th/cmp-buffer") -- source for text in buffer
@@ -110,6 +115,7 @@ return require('packer').startup(function(use)
     end,
   })
 
+  use('RRethy/nvim-treesitter-endwise')
   -- auto closing
   use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
   use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
