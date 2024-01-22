@@ -50,6 +50,7 @@ telescope.setup({
       },
     },
     frecency = {
+      db_safe_mode = false,
       show_filter_column = false,
     },
     ["ui-select"] = {
