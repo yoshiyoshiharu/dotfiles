@@ -31,7 +31,6 @@ keymap.set("n", "n", "nzz")
 keymap.set("n", "N", "Nzz")
 keymap.set("n", "*", "*zz")
 keymap.set("n", "#", "#zz")
-keymap.set("n", "J", "Jx")
 keymap.set("v", "<leader>h", "^")
 keymap.set("v", "<leader>l", "$")
 
