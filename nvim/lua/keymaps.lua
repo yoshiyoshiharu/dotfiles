@@ -22,7 +22,6 @@ keymap.set("n", "<leader>h", "^")
 keymap.set("n", "<leader>l", "$")
 keymap.set("n", "<leader>w", "<C-w>x")
 keymap.set("n", "cp", ":Copypath<cr>")
-keymap.set("n", "p", "pgvy")
 keymap.set("n", "<CR>", "a<Return><Esc>^k")
 keymap.set("n", "<leader>no", ":nohl<CR>")
 keymap.set("n", "<leader>gr", ":lua print(vim.inspect(vim.treesitter.get_captures_at_cursor(0)))<CR>")
@@ -32,6 +31,7 @@ keymap.set("n", "n", "nzz")
 keymap.set("n", "N", "Nzz")
 keymap.set("n", "*", "*zz")
 keymap.set("n", "#", "#zz")
+keymap.set("n", "J", "Jx")
 keymap.set("v", "<leader>h", "^")
 keymap.set("v", "<leader>l", "$")
 
@@ -57,8 +57,7 @@ keymap.set("n", "<leader>tr", ":NvimTreeRefresh<CR>") -- toggle file explorer
 keymap.set("n", "<leader>tx", ":NvimTreeCollapse<CR>") -- toggle file explorer
 
 -- telescope
-keymap.set("n", "<C-p>", "<cmd>Telescope find_files hiddden=true<cr>") -- find files within current working directory, respects .gitignore
-keymap.set("n","<leader>fc", "<cmd>Telescope frecency workspace=CWD<cr>") -- find open buffers
+keymap.set("n","<C-p>", "<cmd>Telescope frecency workspace=CWD<cr>") -- find open buffers
 keymap.set("n", "<C-f>", "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>") -- find string in current working directory as you type
 keymap.set("n", "<leader>fg", "<cmd>Telescope git_bcommits<cr>") -- find string in current working directory as you type
 keymap.set("n", "<leader>ft", "<cmd>Telescope<cr>") -- find string in current working directory as you type
