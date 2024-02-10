@@ -26,7 +26,6 @@ require("lazy").setup({
   "nvim-tree/nvim-web-devicons",
   "nvim-lualine/lualine.nvim",
   "nvim-telescope/telescope-ui-select.nvim",
-  { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
   "nvim-telescope/telescope-frecency.nvim",
 	"nvim-telescope/telescope.nvim",
 	"nvim-telescope/telescope-live-grep-args.nvim",
