@@ -2,8 +2,6 @@ vim.g.mapleader  = " "
 
 local keymap = vim.keymap
 
--- general keymaps
-
 keymap.set("t", "<Esc>", "<C-\\><C-n>")
 keymap.set("i", "jj", "<ESC>:w<cr>")
 keymap.set("i", "<ESC>", "<ESC>:w<cr>")
@@ -25,53 +23,34 @@ keymap.set("n", "cp", ":Copypath<cr>")
 keymap.set("n", "<CR>", "a<Return><Esc>^k")
 keymap.set("n", "<leader>no", ":nohl<CR>")
 keymap.set("n", "<leader>gr", ":lua print(vim.inspect(vim.treesitter.get_captures_at_cursor(0)))<CR>")
-keymap.set("n", "<leader>op", ":Octo pr ")
-keymap.set("n", "<leader>or", ":Octo review ")
 keymap.set("n", "n", "nzz")
 keymap.set("n", "N", "Nzz")
 keymap.set("n", "*", "*zz")
 keymap.set("n", "#", "#zz")
+keymap.set("n", "<leader>rp", ":%s/")
 keymap.set("v", "<leader>h", "^")
 keymap.set("v", "<leader>l", "$")
 
--- delete single character without copying into register
 keymap.set("n", "x", '"_x')
 keymap.set("v", "x", '"_x')
 
--- window management
-keymap.set("n", "<leader>sl", "<C-w>v") -- split window vertically
-keymap.set("n", "<leader>sj", "<C-w>s") -- split window horizontally
-keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
-
--- window size
+keymap.set("n", "<leader>sl", "<C-w>v")
+keymap.set("n", "<leader>sj", "<C-w>s")
+keymap.set("n", "<leader>sx", ":close<CR>")
 keymap.set("n", "<leader>=", "<C-w>15>")
 keymap.set("n", "<leader>-", "<C-w>15<")
-
--- vim maximizer
 keymap.set("n", "<leader>m", ":MaximizerToggle<CR>")
-
--- nvim-tree
-keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>") -- toggle file explorer
-keymap.set("n", "<leader>tr", ":NvimTreeRefresh<CR>") -- toggle file explorer
-keymap.set("n", "<leader>tx", ":NvimTreeCollapse<CR>") -- toggle file explorer
-
--- telescope
-keymap.set("n","<C-p>", "<cmd>Telescope frecency workspace=CWD<cr>") -- find open buffers
-keymap.set("n", "<C-f>", "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>") -- find string in current working directory as you type
-keymap.set("n", "<leader>fg", "<cmd>Telescope git_bcommits<cr>") -- find string in current working directory as you type
-keymap.set("n", "<leader>ft", "<cmd>Telescope<cr>") -- find string in current working directory as you type
-
--- git
-keymap.set("n", "<leader>gb", "<cmd>Git blame<cr>") -- open git status
-
--- lsp
-keymap.set("n", "<leader>te", ":Lspsaga term_toggle<CR>") -- code action
-keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>") -- go to definition
-keymap.set("n", "go", "<cmd>Lspsaga goto_definition<CR>") -- go to definition
-keymap.set("n", "rn", "<cmd>Lspsaga rename<CR>") -- rename
-
--- Diffview
-keymap.set("n", "<leader>dv", ":DiffviewOpen") -- open diffview
-
--- coplilot
-keymap.set("n", "<leader>cp", ":Copilot panel<CR>") -- open copilot panel
+keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>")
+keymap.set("n", "<leader>tr", ":NvimTreeRefresh<CR>")
+keymap.set("n", "<leader>tx", ":NvimTreeCollapse<CR>")
+keymap.set("n","<C-p>", "<cmd>Telescope frecency workspace=CWD<cr>")
+keymap.set("n", "<C-f>", "<cmd>lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>")
+keymap.set("n", "<leader>fg", "<cmd>Telescope git_bcommits<cr>")
+keymap.set("n", "<leader>ft", "<cmd>Telescope<cr>")
+keymap.set("n", "<leader>gb", "<cmd>Git blame<cr>")
+keymap.set("n", "<leader>te", ":Lspsaga term_toggle<CR>")
+keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>")
+keymap.set("n", "go", "<cmd>Lspsaga goto_definition<CR>")
+keymap.set("n", "rn", "<cmd>Lspsaga rename<CR>")
+keymap.set("n", "<leader>dv", ":DiffviewOpen")
+keymap.set("n", "<leader>cp", ":Copilot panel<CR>")
