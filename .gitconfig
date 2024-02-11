@@ -1,22 +1,8 @@
 [user]
 	email = haruki.osaka.u@gmail.com
 	name = yoshiyoshiharu
-[alias]
-  s = status
-  a = add
-  c = commit
-  co = checkout
-  cod = checkout develop
-  com = checkout master
-  b = branch
-  d = diff
-  l = log --oneline
-  ps = push
-  pl = pull
-  pso = push origin
-  plo = pull origin
-  st = stash
-  rs = reset
-  rsh = reset --hard
 [diff]
   algorithm = histogram
+[filter "ignoreline"]
+  smudge = cat
+  clean = sed -e '/.*(?i)gitignoreline/d'
