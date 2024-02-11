@@ -45,6 +45,9 @@ telescope.setup({
       '--smart-case',
       '--hidden',
     },
+    file_ignore_patterns = {
+      "node_modules", ".git"
+    },
   },
   extensions = {
     live_grep_args = {
