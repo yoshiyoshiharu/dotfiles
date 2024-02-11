@@ -35,6 +35,16 @@ telescope.setup({
         ["<C-q>"] = actions.close,
       },
     },
+    vimgrep_arguments = {
+      'rg',
+      '--color=never',
+      '--no-heading',
+      '--with-filename',
+      '--line-number',
+      '--column',
+      '--smart-case',
+      '--hidden',
+    },
   },
   extensions = {
     live_grep_args = {
