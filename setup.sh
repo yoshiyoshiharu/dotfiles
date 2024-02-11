@@ -1,13 +1,8 @@
-#!/bin/bash
+#!/bin/bash -e
 
-current_dir=$PWD
+dotfiles=$(cd $(dirname $0); pwd)
 
-dotfiles=$(dirname $0)
-echo $dotfiles
-
-cd $dotfiles
-
-for file in $dotfiles/.*
+for file in $dotfiles//.*
 do
   filename=$(basename $file)
   echo $filename
@@ -18,7 +13,5 @@ do
   [[ $filename == ".DS_Store" ]] && continue
 
   unlink $HOME/$filename
-  ln -s $dotfiles/$filename $filename
+  ln -s $dotfiles/$filename $HOME/$filename
 done
-
-cd $current_dir
