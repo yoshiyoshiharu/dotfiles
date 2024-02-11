@@ -5,4 +5,4 @@
   algorithm = histogram
 [filter "ignoreline"]
   smudge = cat
-  clean = sed -e '/.*(?i)gitignoreline/d'
+  clean = sed -e '/gitignoreline$/d'
