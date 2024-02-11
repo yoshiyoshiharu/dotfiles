@@ -227,6 +227,7 @@ output.null = "#808080"
 # You can use it by passing the -D option. `pgcli -D example_dsn`
 [alias_dsn]
 # example_dsn = postgresql://[user[:password]@][netloc][:port][/dbname]
+# if you write secret information here, add # gitignoreline to the end of line.
 
 # Format for number representation
 # for decimal "d" - 12345678, ",d" - 12,345,678
