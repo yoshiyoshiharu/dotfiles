@@ -1,6 +1,6 @@
 [user]
-	email = haruki.osaka.u@gmail.com
-	name = yoshiyoshiharu
+  email = haruki.osaka.u@gmail.com
+  name = yoshiyoshiharu
 [diff]
   algorithm = histogram
 [filter "ignoreline"]
