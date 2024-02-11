@@ -74,11 +74,4 @@ require("lazy").setup({
   "tpope/vim-fugitive",
   "sindrets/diffview.nvim",
   'akinsho/git-conflict.nvim',
-  {
-    "mg979/vim-visual-multi",
-    branch = "master",
-    config = function()
-      vim.g.VM_maps = { ['Find Under'] = '<C-n>' }
-    end,
-  },
 })
