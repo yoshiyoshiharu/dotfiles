@@ -81,4 +81,5 @@ require("lazy").setup({
   "tpope/vim-fugitive",
   "sindrets/diffview.nvim",
   'akinsho/git-conflict.nvim',
+  'kevinhwang91/nvim-bqf',
 })
