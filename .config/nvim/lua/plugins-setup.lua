@@ -12,6 +12,12 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  {
+    dir = "~/project/minitest.nvim",
+    config = function()
+      require('minitest').setup({ command = 'docker compose exec web rails test' })
+    end
+  },
   "nvim-lua/plenary.nvim",
   "tomasr/molokai",
   "sainnhe/sonokai",
