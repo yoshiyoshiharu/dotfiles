@@ -3,7 +3,6 @@ vim.g.mapleader  = " "
 local keymap = vim.keymap
 
 keymap.set("t", "<Esc>", "<C-\\><C-n>")
-keymap.set("t", "jj", "<C-\\><C-n>")
 keymap.set("i", "jj", "<ESC>:w<cr>")
 keymap.set("i", "<ESC>", "<ESC>:w<cr>")
 keymap.set("i", "<C-c>", "<ESC>:w<cr>")
