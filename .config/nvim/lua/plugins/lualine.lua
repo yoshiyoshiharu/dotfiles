@@ -10,7 +10,7 @@ local lualine_theme = require("lualine.themes.base16")
 -- configure lualine with modified theme
 lualine.setup({
   options = {
-    theme = "moonbow",
+    theme = "auto",
   },
   sections = {
     lualine_c = {
