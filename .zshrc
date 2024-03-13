@@ -3,7 +3,6 @@ source ~/.zsh.antigen
 export EDITOR=nvim
 bindkey -e
 
-## ls alias
 alias ls='ls -G'
 alias ll='ls -lG'
 alias la='ls -laG'
