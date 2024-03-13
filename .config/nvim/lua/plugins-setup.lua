@@ -72,12 +72,6 @@ require("lazy").setup({
   "petertriho/nvim-scrollbar",
   "github/copilot.vim",
   "lukas-reineke/indent-blankline.nvim",
-  {
-    "tversteeg/registers.nvim",
-    config = function()
-      require("registers").setup()
-    end,
-  },
   "tpope/vim-fugitive",
   "sindrets/diffview.nvim",
   'akinsho/git-conflict.nvim',
