@@ -35,6 +35,7 @@ keymap.set("v", "<leader>l", "$")
 
 keymap.set("n", "x", '"_x')
 keymap.set("v", "x", '"_x')
+keymap.set("v", "p", 'P')
 
 keymap.set("n", "<leader>sl", "<C-w>v")
 keymap.set("n", "<leader>sj", "<C-w>s")
