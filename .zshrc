@@ -8,6 +8,8 @@ alias ll='ls -lG'
 alias la='ls -laG'
 
 alias ga='git add'
+alias gaup='git add -u'
+alias gs='git status'
 alias gc='git commit'
 alias gd='git diff'
 alias gsw='git switch'
