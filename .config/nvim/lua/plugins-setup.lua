@@ -22,7 +22,6 @@ require("lazy").setup({
   "tomasr/molokai",
   "sainnhe/sonokai",
 
-  "christoomey/vim-tmux-navigator",
   "szw/vim-maximizer",
   "nvim-tree/nvim-tree.lua",
   "tpope/vim-surround",
