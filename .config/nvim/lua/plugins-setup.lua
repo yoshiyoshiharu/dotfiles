@@ -79,6 +79,7 @@ require("lazy").setup({
   "sindrets/diffview.nvim",
   { 'akinsho/git-conflict.nvim', version = "*", config = true },
   'kevinhwang91/nvim-bqf',
+  'stevearc/qf_helper.nvim',
   { 'romgrk/barbar.nvim' },
   {
     'kristijanhusak/vim-dadbod-ui',
