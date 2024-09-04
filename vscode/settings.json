@@ -1,0 +1,87 @@
+{
+  "files.autoSave": "afterDelay",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [ "j", "j" ],
+      "after": [ "<Esc>" ]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [ "<Leader>", "n", "o" ],
+      "commands": [ ":nohl" ]
+    },
+    {
+      "before": [ "<Leader>", "l" ],
+      "after": [ "$" ]
+    },
+    {
+      "before": [ "<Leader>", "h" ],
+      "after": [ "^" ]
+    },
+    { "before": [ "x" ],
+      "after": [ "\"", "_", "x" ]
+    },
+    {
+      "before": [ "<C-h>" ],
+      "after": [ "<C-w>", "h" ]
+    },
+    {
+      "before": [ "<c-j>" ],
+      "after": [ "<c-w>", "j" ]
+    },
+    {
+      "before": [ "<c-k>" ],
+      "after": [ "<c-w>", "k" ]
+    },
+    {
+      "before": [ "<c-l>" ],
+      "after": [ "<c-w>", "l" ]
+    },
+    {
+      "before": [ "gd" ],
+      "commands": [ { "command": "editor.action.peekDefinition" } ]
+    },
+    {
+      "before": [ "<Leader>", "s", "j" ],
+      "commands": [ ":sp" ]
+    },
+    {
+      "before": [ "<Leader>", "s", "l" ],
+      "commands": [ ":vs" ]
+    },
+    {
+      "before": [ "n" ],
+      "after": [ "n", "z", "z" ]
+    },
+    {
+      "before": [ "N" ],
+      "after": [ "N", "z", "z" ]
+    },
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [ "<Leader>", "l" ],
+      "after": [ "$" ]
+    },
+    {
+      "before": [ "<Leader>", "h" ],
+      "after": [ "^" ]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false
+  },
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1,
+    "asvetliakov.vscode-neovim": 1
+  },
+  "extensions.ignoreRecommendations": true
+}
