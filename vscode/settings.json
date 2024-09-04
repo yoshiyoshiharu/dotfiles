@@ -1,4 +1,5 @@
 {
+  "editor.fontSize": 12,
   "files.autoSave": "afterDelay",
   "vim.easymotion": true,
   "vim.incsearch": true,
@@ -25,7 +26,8 @@
       "before": [ "<Leader>", "h" ],
       "after": [ "^" ]
     },
-    { "before": [ "x" ],
+    {
+      "before": [ "x" ],
       "after": [ "\"", "_", "x" ]
     },
     {
@@ -47,6 +49,10 @@
     {
       "before": [ "gd" ],
       "commands": [ { "command": "editor.action.peekDefinition" } ]
+    },
+    {
+      "before": [ "<C-q>" ],
+      "commands": [ { "command": "workbench.action.closeActiveEditor" } ]
     },
     {
       "before": [ "<Leader>", "s", "j" ],
