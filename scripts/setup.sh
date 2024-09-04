@@ -22,6 +22,8 @@ do
   ln -s $dotfiles/$filename $HOME/$filename
 done
 
+ln -s $dotfiles/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+
 # install brew packages
 brew bundle --global
 
