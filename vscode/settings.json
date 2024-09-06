@@ -1,5 +1,5 @@
 {
-  "editor.fontSize": 12,
+  "editor.fontSize": 11.5,
   "files.autoSave": "afterDelay",
   "files.associations": {
     "*.erb": "erb"
