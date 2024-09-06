@@ -1,0 +1,12 @@
+[
+  {
+    "key": "ctrl+t",
+    "command": "workbench.view.explorer",
+    "when": "editorFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusFirstEditorGroup",
+    "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+  }
+]

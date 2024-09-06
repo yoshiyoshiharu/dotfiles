@@ -1,6 +1,9 @@
 {
   "editor.fontSize": 12,
   "files.autoSave": "afterDelay",
+  "files.associations": {
+    "*.erb": "erb"
+  },
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
@@ -9,76 +12,193 @@
   "vim.leader": "<space>",
   "vim.insertModeKeyBindings": [
     {
-      "before": [ "j", "j" ],
-      "after": [ "<Esc>" ]
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [ "<Leader>", "n", "o" ],
-      "commands": [ ":nohl" ]
+      "before": [
+        "<Leader>",
+        "n",
+        "o"
+      ],
+      "commands": [
+        ":nohl"
+      ]
     },
     {
-      "before": [ "<Leader>", "l" ],
-      "after": [ "$" ]
+      "before": [
+        "<Leader>",
+        "l"
+      ],
+      "after": [
+        "$"
+      ]
     },
     {
-      "before": [ "<Leader>", "h" ],
-      "after": [ "^" ]
+      "before": [
+        "<Leader>",
+        "h"
+      ],
+      "after": [
+        "^"
+      ]
     },
     {
-      "before": [ "x" ],
-      "after": [ "\"", "_", "x" ]
+      "before": [
+        "x"
+      ],
+      "after": [
+        "\"",
+        "_",
+        "x"
+      ]
     },
     {
-      "before": [ "<C-h>" ],
-      "after": [ "<C-w>", "h" ]
+      "before": [
+        "<C-h>"
+      ],
+      "after": [
+        "<C-w>",
+        "h"
+      ]
     },
     {
-      "before": [ "<c-j>" ],
-      "after": [ "<c-w>", "j" ]
+      "before": [
+        "<c-j>"
+      ],
+      "after": [
+        "<c-w>",
+        "j"
+      ]
     },
     {
-      "before": [ "<c-k>" ],
-      "after": [ "<c-w>", "k" ]
+      "before": [
+        "<c-k>"
+      ],
+      "after": [
+        "<c-w>",
+        "k"
+      ]
     },
     {
-      "before": [ "<c-l>" ],
-      "after": [ "<c-w>", "l" ]
+      "before": [
+        "<c-l>"
+      ],
+      "after": [
+        "<c-w>",
+        "l"
+      ]
     },
     {
-      "before": [ "gd" ],
-      "commands": [ { "command": "editor.action.peekDefinition" } ]
+      "before": [
+        "gd"
+      ],
+      "commands": [
+        {
+          "command": "editor.action.peekDefinition"
+        }
+      ]
     },
     {
-      "before": [ "<C-q>" ],
-      "commands": [ { "command": "workbench.action.closeActiveEditor" } ]
+      "before": [
+        "<C-q>"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.closeActiveEditor"
+        }
+      ]
     },
     {
-      "before": [ "<Leader>", "s", "j" ],
-      "commands": [ ":sp" ]
+      "before": [
+        "<Leader>",
+        "t",
+        "t"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.toggleSidebarVisibility"
+        }
+      ]
     },
     {
-      "before": [ "<Leader>", "s", "l" ],
-      "commands": [ ":vs" ]
+      "before": [
+        "<Leader>",
+        "s",
+        "j"
+      ],
+      "commands": [
+        ":sp"
+      ]
     },
     {
-      "before": [ "n" ],
-      "after": [ "n", "z", "z" ]
+      "before": [
+        "<Leader>",
+        "s",
+        "l"
+      ],
+      "commands": [
+        ":vs"
+      ]
     },
     {
-      "before": [ "N" ],
-      "after": [ "N", "z", "z" ]
+      "before": [
+        "n"
+      ],
+      "after": [
+        "n",
+        "z",
+        "z"
+      ]
     },
+    {
+      "before": [
+        "N"
+      ],
+      "after": [
+        "N",
+        "z",
+        "z"
+      ]
+    },
+    {
+      "before": [
+        "<Leader>",
+        "t",
+        "t"
+      ],
+      "commands": [
+        {
+          "command": "workbench.view.explorer"
+        }
+      ]
+    }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
-      "before": [ "<Leader>", "l" ],
-      "after": [ "$" ]
+      "before": [
+        "<Leader>",
+        "l"
+      ],
+      "after": [
+        "$"
+      ]
     },
     {
-      "before": [ "<Leader>", "h" ],
-      "after": [ "^" ]
+      "before": [
+        "<Leader>",
+        "h"
+      ],
+      "after": [
+        "^"
+      ]
     }
   ],
   "vim.handleKeys": {
