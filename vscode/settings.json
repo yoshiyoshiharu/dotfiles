@@ -98,7 +98,7 @@
     },
     {
       "before": [
-        "gd"
+        "go"
       ],
       "commands": [
         {
