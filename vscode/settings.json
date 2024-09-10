@@ -98,16 +98,6 @@
     },
     {
       "before": [
-        "go"
-      ],
-      "commands": [
-        {
-          "command": "editor.action.peekDefinition"
-        }
-      ]
-    },
-    {
-      "before": [
         "<C-q>"
       ],
       "commands": [
@@ -177,6 +167,26 @@
       "commands": [
         {
           "command": "workbench.view.explorer"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<Tab>"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.nextEditor"
+        }
+      ]
+    },
+    {
+      "before": [
+        "<S-Tab>"
+      ],
+      "commands": [
+        {
+          "command": "workbench.action.previousEditor"
         }
       ]
     }
