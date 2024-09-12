@@ -1,5 +1,4 @@
 {
-  "editor.fontSize": 11.5,
   "files.autoSave": "afterDelay",
   "files.associations": {
     "*.erb": "erb"
@@ -220,5 +219,6 @@
     "asvetliakov.vscode-neovim": 1
   },
   "extensions.ignoreRecommendations": true,
-  "editor.renderFinalNewline": "off"
+  "editor.renderFinalNewline": "off",
+  "window.zoomLevel": -0.5
 }
