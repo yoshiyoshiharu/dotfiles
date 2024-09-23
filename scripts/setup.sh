@@ -26,6 +26,3 @@ ln -s $dotfiles/vscode/settings.json $HOME/Library/Application\ Support/Code/Use
 
 # install brew packages
 brew bundle --global
-
-# intsall pgcli
-pip install -U pgcli
