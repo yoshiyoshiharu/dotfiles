@@ -1,10 +1,12 @@
 #!/bin/bash -e
 
-function setup_zshrc() {
-  rm -rf $HOME/.zsh/antigen/
-  git clone https://github.com/zsh-users/antigen.git $HOME/.zsh/antigen/
-  exec $SHELL
-}
+echo "--------------link dotfiles--------------"
+target_files=(
+  ".gitconfig"
+  ".config"
+)
 
-echo "--------------setup .zshrc--------------"
-setup_zshrc
+for file in ${target_files[@]}
+do
+  ln -s $HOME/dotfiles/$file $HOME/$file
+done
