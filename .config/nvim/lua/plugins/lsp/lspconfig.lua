@@ -24,24 +24,6 @@ lspconfig.rubocop.setup({
   filetypes = { "ruby" },
 })
 
-lspconfig.gopls.setup({})
-vim.api.nvim_create_autocmd('BufWritePre', {
-  pattern = '*.go',
-  callback = function()
-    vim.lsp.buf.code_action({ context = { only = { 'source.organizeImports' } }, apply = true })
-  end
-})
-
-lspconfig.tsserver.setup {
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
-  cmd = { "typescript-language-server", "--stdio" }
-}
-
 lspconfig.emmet_language_server.setup({})
-
-lspconfig.tailwindcss.setup {
-  filetypes = { "html", "css", "scss", "javascript", "javascriptreact", "typescript", "typescriptreact", "vue" },
-  cmd = { "tailwindcss-language-server", "--stdio" }
-}
 
 lspconfig.lua_ls.setup({})
