@@ -61,14 +61,6 @@ plugins=(
   zsh-autosuggestions
 )
 
-## rbenv
-eval "$(rbenv init - zsh)"
-
-## Go
-export GOENV_ROOT="$HOME/.goenv"
-export PATH="$HOME/go/bin:$PATH"
-eval "$(goenv init -)"
-
 ## Git
 autoload -Uz vcs_info
 setopt prompt_subst
