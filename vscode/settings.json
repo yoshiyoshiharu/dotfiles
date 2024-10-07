@@ -1,5 +1,4 @@
 {
-  "files.autoSave": "afterDelay",
   "files.associations": {
     "*.erb": "erb"
   },
@@ -220,5 +219,6 @@
   },
   "extensions.ignoreRecommendations": true,
   "editor.renderFinalNewline": "off",
-  "window.zoomLevel": -0.5
+  "window.zoomLevel": -0.5,
+  "editor.minimap.enabled": false
 }
