@@ -1,4 +1,5 @@
 tap "homebrew/bundle"
+cask "iterm2"
 brew "awscli"
 brew "brew-gem"
 brew "cloc"
