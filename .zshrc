@@ -56,6 +56,8 @@ alias dcrs='docker compose down && docker-compose up -d'
 alias sz='source ~/.zshrc'
 alias nv='nvim'
 
+alias tm='tmux new -s ${PWD:t}'
+
 ## zsh plugins
 plugins=(
   zsh-autosuggestions
