@@ -60,7 +60,7 @@ require("lazy").setup({
       ts_update()
     end,
   },
-  'RRethy/nvim-treesitter-endwise',
+  -- 'RRethy/nvim-treesitter-endwise' https://github.com/RRethy/nvim-treesitter-endwise/issues/41が修正されれば有効化する,
   "windwp/nvim-autopairs",
   { "windwp/nvim-ts-autotag", after = "nvim-treesitter" },
   "lewis6991/gitsigns.nvim",
