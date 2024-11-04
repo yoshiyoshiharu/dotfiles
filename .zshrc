@@ -109,3 +109,5 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 ## Lazy git configfile path
 export XDG_CONFIG_HOME="$HOME/.config"
 eval "$(zoxide init zsh --hook prompt )"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - zsh)"
