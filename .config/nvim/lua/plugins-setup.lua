@@ -21,7 +21,6 @@ require("lazy").setup({
   "nvim-lua/plenary.nvim",
   "tomasr/molokai",
   "sainnhe/sonokai",
-
   "szw/vim-maximizer",
   "nvim-tree/nvim-tree.lua",
   "tpope/vim-surround",
@@ -65,7 +64,6 @@ require("lazy").setup({
   { "windwp/nvim-ts-autotag", after = "nvim-treesitter" },
   "lewis6991/gitsigns.nvim",
   "petertriho/nvim-scrollbar",
-  "github/copilot.vim",
   {
     "CopilotC-Nvim/CopilotChat.nvim",
     branch = "canary",
