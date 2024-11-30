@@ -33,6 +33,7 @@ vim.api.nvim_create_user_command("OpenLazyGit", function()
   })
 end, {})
 
+-- lua lsp setting
 vim.api.nvim_create_autocmd("FileType", {
   desc = "launch lua-language-server",
   pattern = "lua",
@@ -44,6 +45,25 @@ vim.api.nvim_create_autocmd("FileType", {
     })
   end
 })
+
+-- ruby lsp setting
+vim.api.nvim_create_autocmd("FileType", {
+  desc = "launch ruby language server",
+  pattern = "ruby",
+  callback = function()
+    vim.lsp.start({
+      name = "rubocop",
+      cmd = { "rubocop", "--lsp" },
+      root_dir = vim.fs.dirname(vim.fs.find({ ".git" }, { upward = true })[1]),
+    })
+    vim.lsp.start({
+      name = "solargraph",
+      cmd = { "solargraph", "stdio" },
+      root_dir = vim.fs.dirname(vim.fs.find({ ".git" }, { upward = true })[1]),
+    })
+  end
+})
+
 
 vim.api.nvim_create_autocmd("LspAttach", {
   desc = "Attach key mappings for LSP functionalities",
