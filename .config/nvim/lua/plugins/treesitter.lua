@@ -1,45 +1,47 @@
-local status, treesitter = pcall(require, "nvim-treesitter.configs")
-if not status then
-  return
-end
+return {
+  "nvim-treesitter/nvim-treesitter",
+  build = function()
+    require("nvim-treesitter.install").update({ with_sync = true })()
+  end,
+  config = function()
+    require("nvim-treesitter.configs").setup({
+      highlight = {
+        enable = true,
+      },
+      endwise = {
+        enable = true,
+      },
+      indent = { enable = true },
+      autotag = { enable = true },
+      ensure_installed = {
+        "json",
+        "javascript",
+        "typescript",
+        "tsx",
+        "yaml",
+        "html",
+        "css",
+        "markdown",
+        "svelte",
+        "graphql",
+        "bash",
+        "lua",
+        "vim",
+        "dockerfile",
+        "gitignore",
+        "ruby"
+      },
+      auto_install = true,
+    })
 
-treesitter.setup({
-  highlight = {
-    enable = true,
-  },
-  endwise = {
-      enable = true,
-  },
-  indent = { enable = true },
-  autotag = { enable = true },
-  ensure_installed = {
-    "json",
-    "javascript",
-    "typescript",
-    "tsx",
-    "yaml",
-    "html",
-    "css",
-    "markdown",
-    "svelte",
-    "graphql",
-    "bash",
-    "lua",
-    "vim",
-    "dockerfile",
-    "gitignore",
-    "ruby"
-  },
-  auto_install = true,
-})
-
-local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
-parser_config.erb = {
-  install_info = {
-    url = "https://github.com/tree-sitter/tree-sitter-embedded-template",
-    files = {"src/parser.c"},
-    branch = "master",
-    requires_generate_from_grammar = true,
-  },
-  filetype = "erb",
+    require("nvim-treesitter.parsers").get_parser_configs().erb = {
+      install_info = {
+        url = "https://github.com/tree-sitter/tree-sitter-embedded-template",
+        files = {"src/parser.c"},
+        branch = "master",
+        requires_generate_from_grammar = true,
+      },
+      filetype = "erb",
+    }
+  end
 }
