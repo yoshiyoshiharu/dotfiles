@@ -32,3 +32,23 @@ vim.api.nvim_create_user_command("OpenLazyGit", function()
     end,
   })
 end, {})
+
+vim.api.nvim_create_autocmd("FileType", {
+  desc = "launch lua-language-server",
+  pattern = "lua",
+  callback = function()
+    vim.lsp.start({
+      name = "lua_ls",
+      cmd = { "lua-language-server" },
+      root_dir = vim.fs.dirname(vim.fs.find({ ".luarc.json" }, { upward = true })[1]),
+    })
+  end
+})
+
+vim.api.nvim_create_autocmd("LspAttach", {
+  desc = "Attach key mappings for LSP functionalities",
+  callback = function ()
+    vim.keymap.set('n', 'gd', '<cmd>:lua vim.lsp.buf.definition()<CR>')
+    vim.keymap.set('n', 'gr', '<cmd>:lua vim.lsp.buf.references()<CR>')
+  end
+})
