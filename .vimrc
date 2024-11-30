@@ -2,6 +2,7 @@ filetype plugin indent on
 """
 """ common
 """
+let mapleader = " "
 
 set autoindent
 set background=dark
@@ -54,14 +55,5 @@ autocmd BufNewFile,BufRead *.less set syntax=css
 """
 
 inoremap <silent> jj <ESC>
-inoremap <silent> っｊ <ESC>
-
-
-map <C-n> :NERDTreeToggle<CR>
-
-map <C-t> :tabe
-map <C-j> :tabp<CR>
-map <C-k> :tabn<CR>
-map <C-c> :tabc<CR>
-
-map <C-p> :term<CR>
+nnoremap <silent> <leader>h ^
+nnoremap <silent> <leader>l $

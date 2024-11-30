@@ -7,6 +7,7 @@ alias ls='ls -G'
 alias ll='ls -lG'
 alias la='ls -laG'
 
+alias g='git'
 alias ga='git add'
 alias gaup='git add -u'
 alias gs='git status'
