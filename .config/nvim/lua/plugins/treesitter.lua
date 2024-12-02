@@ -34,7 +34,7 @@ return {
       auto_install = true,
     })
 
-    require("nvim-treesitter.parsers").get_parser_configs().erb = {
+    require("nvim-treesitter.parsers").get_parser_configs().embedded_template = {
       install_info = {
         url = "https://github.com/tree-sitter/tree-sitter-embedded-template",
         files = {"src/parser.c"},
