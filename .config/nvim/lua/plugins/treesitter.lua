@@ -1,5 +1,8 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  dependencies = {
+    'RRethy/nvim-treesitter-endwise',
+  },
   build = function()
     require("nvim-treesitter.install").update({ with_sync = true })()
   end,
