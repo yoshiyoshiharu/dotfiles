@@ -24,3 +24,24 @@
 
 [diff]
     colorMoved = default
+[alias]
+  st = status
+  a = add
+  au = add -u
+  l = log --oneline --graph --decorate
+  c = commit
+  cm = commit -m
+  d = diff
+  co = checkout
+  rs = reset
+  rss = reset --soft
+  rsh = reset --hard
+  rb = rebase
+  rbc = rebase --continue
+  cp = cherry-pick
+  sw = switch
+  br = branch
+  brc = symbolic-ref --short HEAD
+  ps = push
+  pl = pull
+  st = stash
