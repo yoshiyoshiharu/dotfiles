@@ -45,3 +45,5 @@
   ps = push
   pl = pull
   st = stash
+  f = fetch
+  fp = fetch --prune
