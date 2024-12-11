@@ -74,7 +74,13 @@ vim.api.nvim_create_autocmd("FileType", {
           },
           includeLanguages = {
             eruby = 'erb',
-          }
+          },
+          experimental = {
+            classRegex = {
+              'class[:]\\s*"([^"]*)"',
+              'class[:]\\s*\'([^"]*)\'',
+            },
+          },
         }
       }
     })
