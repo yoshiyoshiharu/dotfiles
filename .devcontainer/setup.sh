@@ -12,7 +12,7 @@ do
 done
 
 apt-get update
-apt-get install -y jq
+apt-get install -y jq ripgrep
 
 # install git-delta
 LATEST_GIT_DELTA_VERSION=$(curl -s https://api.github.com/repos/dandavison/delta/releases/latest | jq -r '.name')
