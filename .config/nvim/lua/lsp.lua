@@ -77,8 +77,8 @@ vim.api.nvim_create_autocmd("FileType", {
           },
           experimental = {
             classRegex = {
-              'class[:]\\s*"([^"]*)"',
-              'class[:]\\s*\'([^"]*)\'',
+              "(?:class: ?)(?:'|\"|`)([^\"'`]*)(?:'|\"|`)",
+              "class:\\s*\\[([^\\]]*)\\]"
             },
           },
         }
