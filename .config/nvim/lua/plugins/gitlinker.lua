@@ -1,1 +1,4 @@
-return { 'ruifm/gitlinker.nvim' }
+return {
+  'ruifm/gitlinker.nvim',
+  event = "BufRead",
+}

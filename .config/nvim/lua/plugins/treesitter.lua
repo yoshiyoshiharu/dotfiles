@@ -1,5 +1,6 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  event = "BufRead",
   dependencies = {
     'RRethy/nvim-treesitter-endwise',
   },
