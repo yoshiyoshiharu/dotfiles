@@ -1,6 +1,6 @@
 return {
   "yoshiyoshiharu/minitest.nvim",
-  cmd = { "Minitest" },
+  event = { "VeryLazy" },
   config = function()
     require('minitest').setup(
       { command = 'docker compose exec web rails test' }
