@@ -22,3 +22,13 @@ vim.cmd("highlight FloatBorder guibg=none")
 vim.cmd("highlight NormalFloat guibg=none")
 vim.cmd("highlight FloatTitle guibg=none guifg=#fc5d7c")
 vim.cmd("match TrailingWhiteSpace /\\s\\+$/")
+
+vim.opt.guicursor = {
+  "n-v-c:block-Cursor/lCursor",
+  "i-ci-ve:ver25-CursorInsert",
+  "r-cr:hor20-CursorReplace",
+  "o:hor50-CursorOther"
+}
+
+vim.api.nvim_set_hl(0, "Cursor", { fg = "NONE", bg = "green" })
+vim.api.nvim_set_hl(0, "CursorInsert", { fg = "NONE", bg = "green" })
