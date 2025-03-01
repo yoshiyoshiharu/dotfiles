@@ -1,0 +1,93 @@
+---
+- name: Set up my machine
+  hosts: localhost
+  connection: local
+  vars:
+    home_dir: "{{ lookup('env', 'HOME') }}"
+    dotfiles_dir: "{{ lookup('env', 'HOME') }}/dotfiles"
+    vscode_dir: "{{ lookup('env', 'HOME') }}/Library/Application Support/Code/User"
+    home_link_targets:
+      - ".Brewfile"
+      - ".gitconfig"
+      - ".psqlrc"
+      - ".tmux.conf"
+      - ".vimrc"
+      - ".zshrc"
+      - ".zsh.antigen"
+      - ".config/gh"
+      - ".config/git"
+      - ".config/karabiner"
+      - ".config/lazygit"
+      - ".config/nvim"
+      - ".config/gh"
+      - ".devcontaner"
+  tasks:
+    - name: link dotfiles
+      file:
+        src: "{{ dotfiles_dir }}/{{ item }}"
+        dest: "{{ home_dir }}/{{ item }}"
+        state: link
+        force: yes
+      loop: "{{ home_link_targets }}"
+
+    - name: Ensure VSCode settings are linked
+      file:
+        src: "{{ dotfiles }}/vscode/{{ item }}"
+        dest: "{{ vscode_dir }}/{{ item }}"
+        state: link
+        force: yes
+      loop:
+        - settings.json
+        - keybidings.json
+
+    - name: Install Homebrew packages
+      community.general.homebrew:
+        update_homebrew: true
+        upgrade_all: true
+        name:
+          - awscli
+          - brew-gem
+          - cloc
+          - cmake
+          - colordiff
+          - curl
+          - fzf
+          - gettext
+          - gh
+          - git-delta
+          - gnu-sed
+          - grep
+          - jq
+          - lazygit
+          - luarocks
+          - mysql
+          - ninja
+          - node
+          - postgresql@14
+          - redis
+          - ripgrep
+          - stylua
+          - tmux
+          - tree
+          - zoxide
+          - mise
+
+    - name: Install Homebrew cask applications
+      community.general.homebrew:
+        update_homebrew: true
+        upgrade_all: true
+        state: present
+        install_options: 'cask'
+        name:
+          - font-hack-nerd-font
+          - iterm2
+          - notion
+          - raycast
+          - slack
+          - docker
+
+    - name: Clone antigen for zsh
+      git:
+        repo: https://github.com/zsh-users/antigen.git
+        dest: "{{ home_dir }}/.zsh/antigen"
+        force: yes
