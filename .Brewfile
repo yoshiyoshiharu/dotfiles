@@ -1,0 +1,6 @@
+cask "font-hack-nerd-font"
+cask "iterm2"
+cask "notion"
+cask "raycast"
+cask "slack"
+cask "docker"
