@@ -2,7 +2,7 @@
 
 ## Setup
 ```sh
-bash scripts/setup.sh
+ansible-playbook setup.yml
 ```
 
 ## Build Neovim HEAD
