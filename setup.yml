@@ -4,10 +4,20 @@
   connection: local
   vars:
     home_dir: "{{ lookup('env', 'HOME') }}"
-    dotfiles_dir: "{{ lookup('env', 'HOME') }}/dotfiles"
+    dotfiles_dir: "{{ lookup('env', 'PWD') }}"
     vscode_dir: "{{ lookup('env', 'HOME') }}/Library/Application Support/Code/User"
-    home_link_targets:
-      - ".Brewfile"
+  tasks:
+    - name: Ensure .config directory exists
+      file:
+        path: "{{ home_dir }}/.config"
+        state: directory
+        mode: '0751'
+    - name: link dotfiles
+      file:
+        src: "{{ dotfiles_dir }}/{{ item }}"
+        dest: "{{ home_dir }}/{{ item }}"
+        state: link
+      loop:
       - ".gitconfig"
       - ".psqlrc"
       - ".tmux.conf"
@@ -20,25 +30,22 @@
       - ".config/lazygit"
       - ".config/nvim"
       - ".config/gh"
-      - ".devcontaner"
-  tasks:
-    - name: link dotfiles
-      file:
-        src: "{{ dotfiles_dir }}/{{ item }}"
-        dest: "{{ home_dir }}/{{ item }}"
-        state: link
-        force: yes
-      loop: "{{ home_link_targets }}"
+      - ".devcontainer"
+
+    - name: Check if VSCode settings directory exists
+      stat:
+        path: "{{ vscode_dir }}"
+      register: vscode_dir_stat
 
     - name: Ensure VSCode settings are linked
       file:
-        src: "{{ dotfiles }}/vscode/{{ item }}"
+        src: "{{ dotfiles_dir }}/vscode/{{ item }}"
         dest: "{{ vscode_dir }}/{{ item }}"
         state: link
-        force: yes
       loop:
         - settings.json
-        - keybidings.json
+        - keybindings.json
+      when: vscode_dir_stat.stat.exists
 
     - name: Install Homebrew packages
       community.general.homebrew:
@@ -71,20 +78,6 @@
           - tree
           - zoxide
           - mise
-
-    - name: Install Homebrew cask applications
-      community.general.homebrew:
-        update_homebrew: true
-        upgrade_all: true
-        state: present
-        install_options: 'cask'
-        name:
-          - font-hack-nerd-font
-          - iterm2
-          - notion
-          - raycast
-          - slack
-          - docker
 
     - name: Clone antigen for zsh
       git:
