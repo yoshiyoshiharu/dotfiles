@@ -1,0 +1,86 @@
+---
+- name: Set up my machine
+  hosts: localhost
+  connection: local
+  vars:
+    home_dir: "{{ lookup('env', 'HOME') }}"
+    dotfiles_dir: "{{ lookup('env', 'PWD') }}"
+    vscode_dir: "{{ lookup('env', 'HOME') }}/Library/Application Support/Code/User"
+  tasks:
+    - name: Ensure .config directory exists
+      file:
+        path: "{{ home_dir }}/.config"
+        state: directory
+        mode: '0751'
+    - name: link dotfiles
+      file:
+        src: "{{ dotfiles_dir }}/{{ item }}"
+        dest: "{{ home_dir }}/{{ item }}"
+        state: link
+      loop:
+      - ".gitconfig"
+      - ".psqlrc"
+      - ".tmux.conf"
+      - ".vimrc"
+      - ".zshrc"
+      - ".zsh.antigen"
+      - ".config/gh"
+      - ".config/git"
+      - ".config/karabiner"
+      - ".config/lazygit"
+      - ".config/nvim"
+      - ".config/gh"
+      - ".devcontainer"
+
+    - name: Check if VSCode settings directory exists
+      stat:
+        path: "{{ vscode_dir }}"
+      register: vscode_dir_stat
+
+    - name: Ensure VSCode settings are linked
+      file:
+        src: "{{ dotfiles_dir }}/vscode/{{ item }}"
+        dest: "{{ vscode_dir }}/{{ item }}"
+        state: link
+      loop:
+        - settings.json
+        - keybindings.json
+      when: vscode_dir_stat.stat.exists
+
+    - name: Install Homebrew packages
+      community.general.homebrew:
+        update_homebrew: true
+        upgrade_all: true
+        name:
+          - awscli
+          - brew-gem
+          - cloc
+          - cmake
+          - colordiff
+          - curl
+          - fzf
+          - gettext
+          - gh
+          - git-delta
+          - gnu-sed
+          - grep
+          - jq
+          - lazygit
+          - luarocks
+          - mysql
+          - ninja
+          - node
+          - postgresql@14
+          - redis
+          - ripgrep
+          - stylua
+          - tmux
+          - tree
+          - zoxide
+          - mise
+
+    - name: Clone antigen for zsh
+      git:
+        repo: https://github.com/zsh-users/antigen.git
+        dest: "{{ home_dir }}/.zsh/antigen"
+        force: yes
