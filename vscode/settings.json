@@ -220,5 +220,6 @@
   },
   "extensions.ignoreRecommendations": true,
   "editor.renderFinalNewline": "off",
-  "window.zoomLevel": -0.5
+  "window.zoomLevel": -0.5,
+  "cline.preferredLanguage": "Japanese - 日本語"
 }
