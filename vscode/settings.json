@@ -9,6 +9,8 @@
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.leader": "<space>",
+  "editor.minimap.enabled": false,
+  "files.trimTrailingWhitespace": true,
   "vim.insertModeKeyBindings": [
     {
       "before": [
@@ -188,7 +190,16 @@
           "command": "workbench.action.previousEditor"
         }
       ]
+    },
+    {
+      "before": [
+        "<C-n>"
+      ],
+      "commands": [
+        ":noh"
+      ]
     }
+
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
