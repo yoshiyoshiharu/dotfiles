@@ -232,5 +232,7 @@
   "extensions.ignoreRecommendations": true,
   "editor.renderFinalNewline": "off",
   "window.zoomLevel": -0.5,
-  "cline.preferredLanguage": "Japanese - 日本語"
+  "cline.preferredLanguage": "Japanese - 日本語",
+  "workbench.colorTheme": "GitHub Dark Default",
+  "editor.stickyScroll.enabled": false
 }
