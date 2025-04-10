@@ -193,5 +193,24 @@
   {
     "key": "cmd+k alt+cmd+left",
     "command": "-workbench.action.previousEditorInGroup"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "-workbench.action.switchWindow"
+  },
+  {
+    "key": "alt+cmd+.",
+    "command": "-workbench.action.chat.switchToNextModel",
+    "when": "chatIsEnabled && inChatInput"
+  },
+  {
+    "key": "cmd+m",
+    "command": "workbench.action.toggleMaximizeEditorGroup",
+    "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
+  },
+  {
+    "key": "cmd+k cmd+m",
+    "command": "-workbench.action.toggleMaximizeEditorGroup",
+    "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
   }
 ]

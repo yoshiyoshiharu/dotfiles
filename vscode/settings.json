@@ -12,6 +12,12 @@
   "vim.leader": "<space>",
   "editor.minimap.enabled": false,
   "files.trimTrailingWhitespace": true,
+  "extensions.ignoreRecommendations": true,
+  "editor.renderFinalNewline": "off",
+  "window.zoomLevel": -0.5,
+  "cline.preferredLanguage": "Japanese - 日本語",
+  "workbench.colorTheme": "GitHub Dark Default",
+  "editor.stickyScroll.enabled": false,
   "vim.insertModeKeyBindings": [
     {
       "before": [
@@ -188,15 +194,5 @@
         "^"
       ]
     }
-  ],
-  "extensions.experimental.affinity": {
-    "vscodevim.vim": 1,
-    "asvetliakov.vscode-neovim": 1
-  },
-  "extensions.ignoreRecommendations": true,
-  "editor.renderFinalNewline": "off",
-  "window.zoomLevel": -0.5,
-  "cline.preferredLanguage": "Japanese - 日本語",
-  "workbench.colorTheme": "GitHub Dark Default",
-  "editor.stickyScroll.enabled": false
+  ]
 }
