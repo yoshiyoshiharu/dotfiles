@@ -5,6 +5,7 @@
   },
   "vim.easymotion": true,
   "vim.incsearch": true,
+  "vim.visualstar": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
@@ -110,18 +111,6 @@
     {
       "before": [
         "<Leader>",
-        "t",
-        "t"
-      ],
-      "commands": [
-        {
-          "command": "workbench.action.toggleSidebarVisibility"
-        }
-      ]
-    },
-    {
-      "before": [
-        "<Leader>",
         "s",
         "j"
       ],
@@ -173,33 +162,12 @@
     },
     {
       "before": [
-        "<Tab>"
-      ],
-      "commands": [
-        {
-          "command": "workbench.action.nextEditor"
-        }
-      ]
-    },
-    {
-      "before": [
-        "<S-Tab>"
-      ],
-      "commands": [
-        {
-          "command": "workbench.action.previousEditor"
-        }
-      ]
-    },
-    {
-      "before": [
         "<C-n>"
       ],
       "commands": [
         ":noh"
       ]
     }
-
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     {
@@ -221,10 +189,6 @@
       ]
     }
   ],
-  "vim.handleKeys": {
-    "<C-a>": false,
-    "<C-f>": false
-  },
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1,
     "asvetliakov.vscode-neovim": 1
