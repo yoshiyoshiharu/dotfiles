@@ -1,198 +1,178 @@
 {
-  "files.autoSave": "afterDelay",
-  "files.associations": {
-    "*.erb": "erb"
-  },
-  "vim.easymotion": true,
-  "vim.incsearch": true,
-  "vim.visualstar": true,
-  "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
-  "vim.leader": "<space>",
-  "editor.minimap.enabled": false,
-  "files.trimTrailingWhitespace": true,
-  "extensions.ignoreRecommendations": true,
-  "editor.renderFinalNewline": "off",
-  "window.zoomLevel": -0.5,
-  "cline.preferredLanguage": "Japanese - 日本語",
-  "workbench.colorTheme": "GitHub Dark Default",
-  "editor.stickyScroll.enabled": false,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "j",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "<Leader>",
-        "n",
-        "o"
-      ],
-      "commands": [
-        ":nohl"
-      ]
+    "files.autoSave": "afterDelay",
+    "files.associations": {
+       "*.erb": "erb"
     },
-    {
-      "before": [
-        "<Leader>",
-        "l"
-      ],
-      "after": [
-        "$"
-      ]
-    },
-    {
-      "before": [
-        "<Leader>",
-        "h"
-      ],
-      "after": [
-        "^"
-      ]
-    },
-    {
-      "before": [
-        "x"
-      ],
-      "after": [
-        "\"",
-        "_",
-        "x"
-      ]
-    },
-    {
-      "before": [
-        "<C-h>"
-      ],
-      "after": [
-        "<C-w>",
-        "h"
-      ]
-    },
-    {
-      "before": [
-        "<c-j>"
-      ],
-      "after": [
-        "<c-w>",
-        "j"
-      ]
-    },
-    {
-      "before": [
-        "<c-k>"
-      ],
-      "after": [
-        "<c-w>",
-        "k"
-      ]
-    },
-    {
-      "before": [
-        "<c-l>"
-      ],
-      "after": [
-        "<c-w>",
-        "l"
-      ]
-    },
-    {
-      "before": [
-        "<C-q>"
-      ],
-      "commands": [
+    "editor.rulers": [100],
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    "editor.minimap.enabled": false,
+    "files.trimTrailingWhitespace": true,
+    "extensions.ignoreRecommendations": true,
+    "editor.renderFinalNewline": "off",
+    "window.zoomLevel": -0.8,
+    "cline.preferredLanguage": "Japanese - 日本語",
+    "editor.stickyScroll.enabled": false,
+    "vim.iskeyword": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?",
+    "workbench.colorTheme": "Monokai",
+    "vim.insertModeKeyBindings": [
         {
-          "command": "workbench.action.closeActiveEditor"
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
         }
-      ]
-    },
-    {
-      "before": [
-        "<Leader>",
-        "s",
-        "j"
-      ],
-      "commands": [
-        ":sp"
-      ]
-    },
-    {
-      "before": [
-        "<Leader>",
-        "s",
-        "l"
-      ],
-      "commands": [
-        ":vs"
-      ]
-    },
-    {
-      "before": [
-        "n"
-      ],
-      "after": [
-        "n",
-        "z",
-        "z"
-      ]
-    },
-    {
-      "before": [
-        "N"
-      ],
-      "after": [
-        "N",
-        "z",
-        "z"
-      ]
-    },
-    {
-      "before": [
-        "<Leader>",
-        "t",
-        "t"
-      ],
-      "commands": [
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
         {
-          "command": "workbench.view.explorer"
+            "before": [
+                "<Leader>",
+                "l"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "h"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "x"
+            ],
+            "after": [
+                "\"",
+                "_",
+                "x"
+            ]
+        },
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "after": [
+                "<C-w>",
+                "h"
+            ]
+        },
+        {
+            "before": [
+                "<c-j>"
+            ],
+            "after": [
+                "<c-w>",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "<c-k>"
+            ],
+            "after": [
+                "<c-w>",
+                "k"
+            ]
+        },
+        {
+            "before": [
+                "<c-l>"
+            ],
+            "after": [
+                "<c-w>",
+                "l"
+            ]
+        },
+        {
+            "before": [
+                "<C-q>"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.closeActiveEditor"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "s",
+                "j"
+            ],
+            "commands": [
+                ":sp"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "s",
+                "l"
+            ],
+            "commands": [
+                ":vs"
+            ]
+        },
+        {
+            "before": [
+                "n"
+            ],
+            "after": [
+                "n",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "N"
+            ],
+            "after": [
+                "N",
+                "z",
+                "z"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":noh"
+            ]
         }
-      ]
-    },
-    {
-      "before": [
-        "<C-n>"
-      ],
-      "commands": [
-        ":noh"
-      ]
-    }
-  ],
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "<Leader>",
-        "l"
-      ],
-      "after": [
-        "$"
-      ]
-    },
-    {
-      "before": [
-        "<Leader>",
-        "h"
-      ],
-      "after": [
-        "^"
-      ]
-    }
-  ]
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<Leader>",
+                "l"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "<Leader>",
+                "h"
+            ],
+            "after": [
+                "^"
+            ]
+        }
+    ]
 }
