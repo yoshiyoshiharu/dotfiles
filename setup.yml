@@ -5,7 +5,8 @@
   vars:
     home_dir: "{{ lookup('env', 'HOME') }}"
     dotfiles_dir: "{{ lookup('env', 'PWD') }}"
-    vscode_dir: "{{ lookup('env', 'HOME') }}/Library/Application Support/Code/User"
+    vscode_dir: "{{ home_dir }}/Library/Application Support/Code/User"
+    obsidian_dir: "{{ home_dir }}/Documents/Obsidian Vault/"
   tasks:
     - name: Ensure .config directory exists
       file:
@@ -31,6 +32,20 @@
       - ".config/nvim"
       - ".config/gh"
       - ".devcontainer"
+
+    - name: Check if Obsidian directory exists
+      stat:
+        path: "{{ obsidian_dir }}"
+      register: obsidian_dir_stat
+
+    - name: Ensure Obsidian settings are linked
+      file:
+        src: "{{ dotfiles_dir }}/{{ item }}"
+        dest: "{{ obsidian_dir }}/{{ item }}"
+        state: link
+      loop:
+        - .obsidian.vimrc
+      when: obsidian_dir_stat.stat.exists
 
     - name: Check if VSCode settings directory exists
       stat:
